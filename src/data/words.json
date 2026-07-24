@@ -1,0 +1,10 @@
+[
+  { "id": 1, "front": "merhaba", "back": "hello" },
+  { "id": 2, "front": "teşekkür ederim", "back": "thank you" },
+  { "id": 3, "front": "günaydın", "back": "good morning" },
+  { "id": 4, "front": "nasılsın?", "back": "how are you?" },
+  { "id": 5, "front": "afiyet olsun", "back": "bon appétit / enjoy your meal" },
+  { "id": 6, "front": "kolay gelsin", "back": "said to someone who is working — \"may it be easy\"" },
+  { "id": 7, "front": "görüşürüz", "back": "see you later" },
+  { "id": 8, "front": "hoş geldiniz", "back": "welcome" }
+]
