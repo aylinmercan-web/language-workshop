@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import axiosInstance from '../api/axiosInstance'
 
 const initialForm = { name: '', email: '', level: '', date: '', message: '' }
 
@@ -30,13 +29,11 @@ export default function BookingForm() {
     if (Object.keys(currentErrors).length > 0) return
 
     setStatus('sending')
-    try {
-      await axiosInstance.post('/lesson-booking', form)
+    // Demo project: no real backend, simulate a request instead of calling one.
+    setTimeout(() => {
       setStatus('success')
       setForm(initialForm)
-    } catch {
-      setStatus('error')
-    }
+    }, 700)
   }
 
   return (
