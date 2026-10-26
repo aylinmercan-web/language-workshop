@@ -23,11 +23,15 @@
   --c-card: 30 41 59;
   --c-soft: 21 31 50;
   --c-mint: 16 42 46;
-  --c-cream: 41 34 20;
+  --c-cream: 24 39 66;
   --c-line: 51 65 85;
   --c-brand: 94 234 212;
   --c-hero: 17 94 89;
   color-scheme: dark;
+}
+
+html {
+  scroll-padding-top: 4.5rem;
 }
 
 body {

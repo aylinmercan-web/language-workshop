@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Nav from '../components/Nav'
 import PostCard from '../components/PostCard'
 import { categories, sortedPosts } from '../data/posts'
 import { setPageMeta } from '../utils/meta'
@@ -28,7 +27,6 @@ export default function Blog() {
   return (
     <>
       <header className="bg-hero pb-12">
-        <Nav />
         <div className="max-w-4xl mx-auto px-6 pt-12 text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-3">Blog</h1>
           <p lang="tr" className="text-white font-medium max-w-xl mx-auto">

@@ -1,5 +1,4 @@
 import profilFoto from '../assets/profil.jpeg'
-import Nav from './Nav'
 
 const bullets = [
   'Improve fluency',
@@ -16,8 +15,6 @@ function scrollTo(e, href) {
 export default function Header() {
   return (
     <header className="bg-hero">
-      <Nav />
-
       <div className="max-w-5xl mx-auto px-6 py-14 md:py-20 flex flex-col md:flex-row md:items-center gap-10 md:gap-12">
         <div className="flex-1 text-center md:text-left">
           <h1 className="inline-block bg-[#E30A17] text-white font-extrabold text-sm md:text-base px-4 py-2 rounded-lg -rotate-2 shadow-md mb-6">

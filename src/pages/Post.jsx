@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Nav from '../components/Nav'
 import PostCard, { PostMeta } from '../components/PostCard'
 import posts, { sortedPosts } from '../data/posts'
 import { setPageMeta } from '../utils/meta'
@@ -79,9 +78,6 @@ export default function Post({ slug }) {
   if (!post) {
     return (
       <>
-        <header className="bg-hero pb-10">
-          <Nav />
-        </header>
         <main className="px-6 py-20 text-center">
           <h1 className="text-2xl font-bold text-ink mb-4">Yazı bulunamadı · Post not found</h1>
           <a href="/blog" className="text-brand font-semibold underline">
@@ -96,10 +92,6 @@ export default function Post({ slug }) {
 
   return (
     <>
-      <header className="bg-hero pb-10">
-        <Nav />
-      </header>
-
       <main className="px-6 py-10 md:py-14">
         <article className="max-w-2xl mx-auto">
           <a href="/blog" lang="tr" className="text-sm font-semibold text-brand hover:underline">
@@ -155,7 +147,7 @@ export default function Post({ slug }) {
           )}
 
           {post.note && (
-            <aside className="mt-10 rounded-2xl bg-cream border border-amber-200 dark:border-amber-900 p-5">
+            <aside className="mt-10 rounded-2xl bg-cream border border-amber-200 dark:border-line p-5">
               <h2 className="font-bold text-ink mb-1">
                 <span lang="tr">Biliyor muydunuz?</span> <span className="text-sm font-normal text-muted">· Did you know?</span>
               </h2>

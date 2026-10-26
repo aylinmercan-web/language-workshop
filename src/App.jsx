@@ -1,6 +1,7 @@
 import Home from './pages/Home'
 import Blog from './pages/Blog'
 import Post from './pages/Post'
+import Nav from './components/Nav'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 import { currentPath } from './utils/path'
@@ -15,6 +16,7 @@ function getPage() {
 function App() {
   return (
     <div>
+      <Nav />
       {getPage()}
       <Footer />
       <WhatsAppButton />
