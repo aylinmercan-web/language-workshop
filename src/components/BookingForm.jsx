@@ -1,20 +1,21 @@
 import { useState } from 'react'
+import { sendForm } from '../api/axiosInstance'
 
-const initialForm = { name: '', email: '', level: '', date: '', message: '' }
+const initialForm = { name: '', email: '', type: 'private', level: '', date: '', message: '' }
 
 function validate(form) {
   const errors = {}
   if (form.name.trim().length < 3) errors.name = 'Name must be at least 3 characters.'
   if (!/^\S+@\S+\.\S+$/.test(form.email)) errors.email = 'Please enter a valid email address.'
   if (!form.level) errors.level = 'Please select a level.'
-  if (!form.date) errors.date = 'Please select a date.'
+  if (form.type === 'private' && !form.date) errors.date = 'Please select a date.'
   return errors
 }
 
 export default function BookingForm() {
   const [form, setForm] = useState(initialForm)
   const [errors, setErrors] = useState({})
-  const [status, setStatus] = useState('idle') // idle | sending | success | error
+  const [status, setStatus] = useState('idle')
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -29,20 +30,22 @@ export default function BookingForm() {
     if (Object.keys(currentErrors).length > 0) return
 
     setStatus('sending')
-    // Demo project: no real backend, simulate a request instead of calling one.
-    setTimeout(() => {
+    try {
+      await sendForm(`${form.type === 'group' ? 'Group class' : 'Lesson'} request from ${form.name}`, form)
       setStatus('success')
       setForm(initialForm)
-    }, 700)
+    } catch {
+      setStatus('error')
+    }
   }
 
   return (
-    <section id="booking" className="px-6 py-16 md:py-20 bg-white">
+    <section id="booking" className="px-6 py-16 md:py-20">
       <div className="max-w-xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2 text-center">Book a Lesson</h2>
         <p className="text-muted mb-8 text-center">Pick a level and a date that works for you, and I'll get back to you.</p>
 
-        <form onSubmit={handleSubmit} noValidate className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 space-y-5">
+        <form onSubmit={handleSubmit} noValidate className="bg-card rounded-2xl border border-line p-6 md:p-8 space-y-5">
           <div>
             <label className="field-label" htmlFor="name">Your Name</label>
             <input id="name" name="name" value={form.name} onChange={handleChange} className="field-input" placeholder="Full name" />
@@ -56,18 +59,29 @@ export default function BookingForm() {
           </div>
 
           <div>
+            <label className="field-label" htmlFor="type">Lesson Type</label>
+            <select id="type" name="type" value={form.type} onChange={handleChange} className="field-input">
+              <option value="private">Private lesson</option>
+              <option value="group">Group class</option>
+            </select>
+          </div>
+
+          <div>
             <label className="field-label" htmlFor="level">Your Level</label>
             <select id="level" name="level" value={form.level} onChange={handleChange} className="field-input">
               <option value="">Select</option>
-              <option value="beginner">Beginner</option>
-              <option value="intermediate">Intermediate</option>
-              <option value="advanced">Advanced</option>
+              <option value="A1">A1 – Beginner</option>
+              <option value="A2">A2 – Elementary</option>
+              <option value="B1">B1 – Intermediate</option>
+              <option value="B2">B2 – Upper intermediate</option>
+              <option value="C1">C1 – Advanced</option>
+              <option value="not sure">Not sure</option>
             </select>
             {errors.level && <p className="field-error">{errors.level}</p>}
           </div>
 
           <div>
-            <label className="field-label" htmlFor="date">Preferred Date</label>
+            <label className="field-label" htmlFor="date">Preferred Date{form.type === 'group' && ' (optional)'}</label>
             <input id="date" name="date" type="date" value={form.date} onChange={handleChange} className="field-input" />
             {errors.date && <p className="field-error">{errors.date}</p>}
           </div>
@@ -82,10 +96,10 @@ export default function BookingForm() {
           </button>
 
           {status === 'success' && (
-            <p className="text-sm text-green-600 text-center">Thanks — your request has been received!</p>
+            <p className="text-sm text-green-600 dark:text-green-400 text-center">Thanks! Your request has been sent. I'll reply by email soon.</p>
           )}
           {status === 'error' && (
-            <p className="text-sm text-red-600 text-center">Something went wrong, please try again.</p>
+            <p className="text-sm text-red-600 dark:text-red-400 text-center">Something went wrong, please try again.</p>
           )}
         </form>
       </div>

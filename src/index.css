@@ -2,9 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --c-ink: 30 41 59;
+  --c-muted: 100 116 139;
+  --c-page: 255 255 255;
+  --c-card: 255 255 255;
+  --c-soft: 249 250 251;
+  --c-mint: 240 253 250;
+  --c-cream: 255 251 235;
+  --c-line: 229 231 235;
+  --c-brand: 15 118 110;
+  --c-hero: 13 148 136;
+  color-scheme: light;
+}
+
+.dark {
+  --c-ink: 226 232 240;
+  --c-muted: 148 163 184;
+  --c-page: 15 23 42;
+  --c-card: 30 41 59;
+  --c-soft: 21 31 50;
+  --c-mint: 16 42 46;
+  --c-cream: 41 34 20;
+  --c-line: 51 65 85;
+  --c-brand: 94 234 212;
+  --c-hero: 17 94 89;
+  color-scheme: dark;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  color: theme('colors.ink');
+  @apply bg-page text-ink transition-colors;
 }
 
 h1, h2, h3 {
@@ -20,9 +48,9 @@ h1, h2, h3 {
 }
 
 .field-input {
-  @apply w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary;
+  @apply w-full rounded-lg border border-line bg-card text-ink px-3 py-2 text-sm placeholder:text-muted focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary;
 }
 
 .field-error {
-  @apply mt-1 text-xs text-red-600;
+  @apply mt-1 text-xs text-red-600 dark:text-red-400;
 }

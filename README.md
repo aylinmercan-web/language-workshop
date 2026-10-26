@@ -1,6 +1,6 @@
 # Dil Atölyesi
 
-Kişisel bir konsept proje: dil öğretimine yönelik kelime kartları, ders rezervasyon formu ve öğrenci yorumları içeren tek sayfalık React uygulaması.
+Aylin Mercan'ın Türkçe dersleri, blogu ve Cat City İstanbul kitabı için React sitesi.
 
 ## Kurulum
 
@@ -13,12 +13,11 @@ Tarayıcıda `http://localhost:5173` adresini aç.
 
 ## İçerik güncelleme
 
-- `src/data/words.json`: kelime kartları (front/back)
-- `src/data/testimonials.json`: öğrenci yorumları — italki profilinden gerçek yorumlarla değiştir
-- `src/components/Header.jsx`: başlık ve açıklama metni
+- `src/data/posts.js`: blog yazıları
+- `src/data/testimonials.json`: öğrenci yorumları
+- `src/data/words.json`: kelime kartları
+- `src/config.js`: iletişim bilgileri ve kitap linki
 
-## Deploy (Vercel)
+## Yayın
 
-1. Projeyi GitHub'a push et.
-2. [vercel.com](https://vercel.com) üzerinden GitHub reposunu import et.
-3. Framework preset: **Vite**. Build command: `npm run build`, Output directory: `dist`.
+Cloudflare Pages · build: `npm run build` · output: `dist`

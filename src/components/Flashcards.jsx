@@ -2,8 +2,8 @@ import { useState } from 'react'
 import words from '../data/words.json'
 
 const palettes = [
-  { light: 'bg-teal-50 border-teal-300', solid: 'bg-teal-600 border-teal-600', label: 'text-teal-700', backMain: 'text-white', backLabel: 'text-white/80' },
-  { light: 'bg-amber-50 border-accent', solid: 'bg-accent border-accent', label: 'text-amber-700', backMain: 'text-teal-900', backLabel: 'text-teal-900/70' },
+  { light: 'bg-mint border-teal-300 dark:border-teal-700', solid: 'bg-teal-600 border-teal-600', label: 'text-brand', backMain: 'text-white', backLabel: 'text-white/80' },
+  { light: 'bg-cream border-accent', solid: 'bg-accent border-accent', label: 'text-amber-700 dark:text-amber-300', backMain: 'text-teal-900', backLabel: 'text-teal-900/70' },
 ]
 
 export default function Flashcards() {
@@ -36,7 +36,6 @@ export default function Flashcards() {
             className="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-500 cursor-pointer"
             style={{ transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
           >
-            {/* Front — Turkish */}
             <div
               className={`absolute inset-0 [backface-visibility:hidden] rounded-2xl border-2 shadow-sm flex flex-col items-center justify-center gap-2 px-6 ${palette.light}`}
             >
@@ -44,7 +43,6 @@ export default function Flashcards() {
               <span className={`text-xs font-bold uppercase tracking-wide ${palette.label}`}>Turkish</span>
             </div>
 
-            {/* Back — English */}
             <div
               className={`absolute inset-0 [backface-visibility:hidden] rounded-2xl border-2 shadow-sm flex flex-col items-center justify-center gap-2 px-6 ${palette.solid}`}
               style={{ transform: 'rotateY(180deg)' }}
@@ -56,11 +54,11 @@ export default function Flashcards() {
         </div>
 
         <div className="mt-6 flex items-center justify-center gap-4">
-          <button type="button" onClick={prev} className="px-4 py-2 rounded-lg border border-gray-300 text-sm font-medium hover:bg-gray-50 transition-colors">
+          <button type="button" onClick={prev} className="px-4 py-2 rounded-lg border border-line bg-card text-ink text-sm font-medium hover:bg-soft transition-colors">
             Previous
           </button>
           <span className="text-sm text-muted">{index + 1} / {words.length}</span>
-          <button type="button" onClick={next} className="px-4 py-2 rounded-lg border border-gray-300 text-sm font-medium hover:bg-gray-50 transition-colors">
+          <button type="button" onClick={next} className="px-4 py-2 rounded-lg border border-line bg-card text-ink text-sm font-medium hover:bg-soft transition-colors">
             Next
           </button>
         </div>

@@ -1,4 +1,5 @@
 import testimonials from '../data/testimonials.json'
+import { site } from '../config'
 
 const palettes = [
   { border: 'border-t-teal-600', avatar: 'bg-teal-600', avatarText: 'text-white' },
@@ -7,7 +8,7 @@ const palettes = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="px-6 py-16 md:py-20 bg-gray-50">
+    <section id="testimonials" className="px-6 py-16 md:py-20 bg-soft">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-ink mb-10 text-center">What My Students Say</h2>
 
@@ -17,9 +18,9 @@ export default function Testimonials() {
             return (
               <blockquote
                 key={item.id}
-                className={`relative bg-white rounded-2xl border-t-4 ${palette.border} border border-gray-200 p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300`}
+                className={`relative bg-card rounded-2xl border-t-4 ${palette.border} border border-line p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300`}
               >
-                <span className="absolute top-4 right-5 text-5xl font-serif text-gray-100 select-none leading-none">&rdquo;</span>
+                <span className="absolute top-4 right-5 text-5xl font-serif text-line select-none leading-none">&rdquo;</span>
                 <div className="flex items-center gap-3 mb-4">
                   <span className={`h-10 w-10 rounded-full ${palette.avatar} ${palette.avatarText} font-bold flex items-center justify-center flex-shrink-0`}>
                     {item.name.charAt(0)}
@@ -34,7 +35,17 @@ export default function Testimonials() {
             )
           })}
         </div>
-        <p className="text-xs text-muted text-center mt-6">Real reviews from students I've taught Turkish to on italki.</p>
+        <p className="text-xs text-muted text-center mt-6">
+          Real reviews from my students on italki.
+          {site.italki && (
+            <>
+              {' '}
+              <a href={site.italki} target="_blank" rel="noreferrer" className="text-brand font-semibold underline">
+                See all reviews
+              </a>
+            </>
+          )}
+        </p>
       </div>
     </section>
   )

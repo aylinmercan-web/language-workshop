@@ -1,17 +1,27 @@
 /** @type {import('tailwindcss').Config} */
+const token = (name) => `rgb(var(--c-${name}) / <alpha-value>)`
+
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#2563EB',
-          dark: '#1D4ED8',
-          light: '#EFF6FF',
+          DEFAULT: '#0D9488',
+          dark: '#0F766E',
         },
         accent: '#F59E0B',
-        ink: '#1E293B',
-        muted: '#64748B',
+        ink: token('ink'),
+        muted: token('muted'),
+        page: token('page'),
+        card: token('card'),
+        soft: token('soft'),
+        mint: token('mint'),
+        cream: token('cream'),
+        line: token('line'),
+        brand: token('brand'),
+        hero: token('hero'),
       },
       fontFamily: {
         display: ['Poppins', 'sans-serif'],

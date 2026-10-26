@@ -1,12 +1,22 @@
 import axios from 'axios'
+import { site } from '../config'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://reqres.in/api',
+  baseURL: 'https://formsubmit.co/ajax',
   headers: {
     'Content-Type': 'application/json',
-    'x-api-key': 'reqres-free-v1',
+    Accept: 'application/json',
   },
   timeout: 10000,
 })
+
+export function sendForm(subject, data) {
+  return axiosInstance.post(`/${site.email}`, {
+    ...data,
+    _subject: subject,
+    _template: 'table',
+    _captcha: 'false',
+  })
+}
 
 export default axiosInstance

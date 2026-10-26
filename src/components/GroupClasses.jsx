@@ -1,0 +1,74 @@
+import { site } from '../config'
+
+const groups = [
+  {
+    level: 'A1',
+    title: 'Beginners',
+    text: 'Start from zero: greetings, numbers, everyday phrases and the basics of Turkish grammar, step by step.',
+  },
+  {
+    level: 'A2',
+    title: 'Elementary',
+    text: 'Build on the basics: talk about your day, your plans and your past, and handle everyday situations in Turkish.',
+  },
+  {
+    level: 'B1–B2',
+    title: 'Conversation Club',
+    text: 'Mostly speaking practice: real-life topics, discussions and role plays to become fluent and confident.',
+  },
+]
+
+function whatsappLink(level) {
+  const text = `Merhaba Aylin! I'm interested in the ${level} group class. Could you send me the details?`
+  return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`
+}
+
+export default function GroupClasses() {
+  const toForm = (e) => {
+    e.preventDefault()
+    document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  return (
+    <section id="groups" className="px-6 py-16 md:py-20 bg-mint">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2 text-center">Group Classes</h2>
+        <p className="text-muted mb-10 text-center max-w-xl mx-auto">
+          Learn together with other students in small groups of 4 to 12 people. A fun way to practise more and
+          keep motivated.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {groups.map((g) => (
+            <div key={g.level} className="bg-card rounded-2xl border border-line p-6 shadow-sm flex flex-col">
+              <span className="self-start rounded-lg bg-accent px-3 py-1 text-sm font-extrabold text-teal-900 mb-3">
+                {g.level}
+              </span>
+              <h3 className="text-lg font-bold text-ink mb-2">{g.title}</h3>
+              <p className="text-sm text-ink leading-relaxed mb-4 flex-1">{g.text}</p>
+              <p className="text-xs font-semibold text-brand mb-4">4–12 students per class</p>
+              {site.whatsapp && (
+                <a
+                  href={whatsappLink(g.level)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex justify-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1EBE5A] transition-colors"
+                >
+                  Ask on WhatsApp
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <p className="text-sm text-muted text-center mt-8">
+          Prefer email?{' '}
+          <a href="#booking" onClick={toForm} className="text-brand font-semibold underline">
+            Use the form
+          </a>{' '}
+          and choose "Group class".
+        </p>
+      </div>
+    </section>
+  )
+}

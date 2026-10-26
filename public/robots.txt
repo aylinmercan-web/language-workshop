@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://turkishwithaylin.com/sitemap.xml
