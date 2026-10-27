@@ -96,7 +96,7 @@ export default function ConjugationPractice() {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2">Conjugation Practice</h2>
-          <p lang="tr" className="text-brand font-semibold">Çekim pratiği</p>
+          <p lang="tr" className="text-brand font-semibold">Çekimleme</p>
           <p className="text-muted mt-1">Choose a tense, then write the correct form of the verb.</p>
         </div>
 
