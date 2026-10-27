@@ -11,7 +11,7 @@ const axiosInstance = axios.create({
 })
 
 export function sendForm(subject, data) {
-  return axiosInstance.post(`/${site.email}`, {
+  return axiosInstance.post(`/${site.formId}`, {
     ...data,
     _subject: subject,
     _template: 'table',

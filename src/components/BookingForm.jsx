@@ -31,7 +31,14 @@ export default function BookingForm() {
 
     setStatus('sending')
     try {
-      await sendForm(`${form.type === 'group' ? 'Group class' : 'Lesson'} request from ${form.name}`, form)
+      await sendForm(`${form.type === 'group' ? 'Group class' : 'Lesson'} request from ${form.name}`, {
+        Name: form.name,
+        email: form.email,
+        'Lesson type': form.type === 'group' ? 'Group class' : 'Private lesson',
+        Level: form.level,
+        'Preferred date': form.date || '-',
+        Message: form.message || '-',
+      })
       setStatus('success')
       setForm(initialForm)
     } catch {
