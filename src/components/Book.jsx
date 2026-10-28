@@ -140,7 +140,7 @@ function CaseBook() {
       />
 
       <div lang="en">
-        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-2">A1–B1 · Free sample</p>
+        <p className="text-xs font-bold uppercase tracking-widest text-brand mb-2">All levels · Free sample</p>
         <h3 lang="tr" className="text-3xl md:text-4xl font-extrabold text-ink mb-1">Hangi Durum Eki?</h3>
         <p className="text-lg font-semibold text-brand mb-5">Which Grammatical Case?</p>
 
