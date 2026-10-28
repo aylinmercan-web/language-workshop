@@ -20,12 +20,12 @@ export default function Home() {
     <>
       <Header />
       <About />
-      <GroupClasses />
       <Testimonials />
+      <GroupClasses />
       <Book />
-      <BlogPreview />
       <Flashcards />
       <ConjugationPractice />
+      <BlogPreview />
       <BookingForm />
     </>
   )

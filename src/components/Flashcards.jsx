@@ -27,7 +27,7 @@ export default function Flashcards() {
     <section id="flashcards" className="px-6 py-16 md:py-20">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2">Practice with Flashcards</h2>
-        <p className="text-muted mb-10">Click the card to reveal the translation.</p>
+        <p className="text-muted mb-10">Everyday Turkish expressions. Click the card to see the meaning.</p>
 
         <div className="w-full max-w-sm mx-auto h-52 [perspective:1200px]">
           <button

@@ -5,11 +5,11 @@ import { currentPath } from '../utils/path'
 
 const links = [
   { href: '/#about', label: 'About' },
+  { href: '/#testimonials', label: 'Reviews' },
   { href: '/#groups', label: 'Group Classes' },
+  { href: '/#book', label: 'My Books' },
   { href: '/#conjugation', label: 'Practice' },
   { href: '/blog', label: 'Blog' },
-  { href: '/#book', label: 'My Books' },
-  { href: '/#testimonials', label: 'Reviews' },
   { href: '/#booking', label: 'Book a Lesson' },
 ]
 
