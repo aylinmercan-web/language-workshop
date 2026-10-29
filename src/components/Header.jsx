@@ -15,7 +15,7 @@ function scrollTo(e, href) {
 export default function Header() {
   return (
     <header className="bg-hero flex items-center min-h-[calc(100svh-60px)]">
-      <div className="w-full max-w-5xl mx-auto px-6 py-14 md:py-20 flex flex-col md:flex-row md:items-center gap-10 md:gap-12">
+      <div className="w-full max-w-6xl mx-auto px-6 py-14 md:py-20 flex flex-col md:flex-row md:items-center gap-10 md:gap-12">
         <div className="flex-1 text-center md:text-left">
           <h1 className="hero-pop inline-block bg-[#E30A17] text-white font-extrabold text-sm md:text-base px-4 py-2 rounded-lg -rotate-2 shadow-md mb-6">
             LEARN TURKISH WITH <span lang="tr">AYLİN</span>
@@ -39,7 +39,7 @@ export default function Header() {
           </a>
         </div>
 
-        <div style={{ animationDelay: '300ms' }} className="hero-up relative w-full max-w-[220px] md:max-w-[300px] mx-auto md:mx-0 flex-shrink-0">
+        <div style={{ animationDelay: '300ms' }} className="hero-up relative w-full max-w-[260px] md:max-w-[340px] lg:max-w-[440px] mx-auto md:mx-0 flex-shrink-0">
           <div className="rounded-full p-2 bg-white">
             <img
               src={profilFoto}

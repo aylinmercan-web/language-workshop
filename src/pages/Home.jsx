@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Header from '../components/Header'
 import About from '../components/About'
 import GroupClasses from '../components/GroupClasses'
+import PrivateLessons from '../components/PrivateLessons'
 import Testimonials from '../components/Testimonials'
 import Book from '../components/Book'
 import BlogPreview from '../components/BlogPreview'
@@ -21,6 +22,7 @@ export default function Home() {
       <Header />
       <About />
       <Testimonials />
+      <PrivateLessons />
       <GroupClasses />
       <Book />
       <Flashcards />

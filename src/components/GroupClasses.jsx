@@ -6,16 +6,19 @@ const groups = [
     level: 'A1',
     title: 'Beginners',
     text: 'Start from zero: greetings, numbers, everyday phrases and the basics of Turkish grammar, step by step.',
+    info: ['4–12 students', '2 hours with a short break', 'Lesson materials included'],
   },
   {
     level: 'A2',
     title: 'Elementary',
     text: 'Build on the basics: talk about your day, your plans and your past, and handle everyday situations in Turkish.',
+    info: ['4–12 students', '2 hours with a short break', 'Lesson materials included'],
   },
   {
     level: 'B1–B2',
     title: 'Conversation Club',
     text: 'Mostly speaking practice: real-life topics, discussions and role plays to become fluent and confident.',
+    info: ['4–8 students', '60 minutes'],
   },
 ]
 
@@ -35,8 +38,7 @@ export default function GroupClasses() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-ink mb-2 text-center">Group Classes</h2>
         <p className="text-muted mb-10 text-center max-w-xl mx-auto">
-          Learn together with other students in small groups of 4 to 12 people. A fun way to practise more and
-          keep motivated.
+          Learn together with other students in small groups. A fun way to practise more and keep motivated.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -47,7 +49,11 @@ export default function GroupClasses() {
               </span>
               <h3 className="text-lg font-bold text-ink mb-2">{g.title}</h3>
               <p className="text-sm text-ink leading-relaxed mb-4 flex-1">{g.text}</p>
-              <p className="text-xs font-semibold text-brand mb-4">4–12 students per class</p>
+              <ul className="text-xs font-semibold text-brand mb-4 space-y-1">
+                {g.info.map((i) => (
+                  <li key={i}>{i}</li>
+                ))}
+              </ul>
               {site.whatsapp && (
                 <a
                   href={whatsappLink(g.level)}

@@ -5,8 +5,7 @@ import { currentPath } from '../utils/path'
 
 const links = [
   { href: '/#about', label: 'About' },
-  { href: '/#testimonials', label: 'Reviews' },
-  { href: '/#groups', label: 'Group Classes' },
+  { href: '/#lessons', label: 'Lessons' },
   { href: '/#book', label: 'My Books' },
   { href: '/#conjugation', label: 'Practice' },
   { href: '/blog', label: 'Blog' },
@@ -47,7 +46,10 @@ export default function Nav() {
           className="mr-auto flex items-center gap-2 text-white font-bold text-lg"
         >
           <TurkishFlag className="h-6 w-9 rounded shadow" />
-          Turkish with Aylin
+          <span className="flex flex-col whitespace-nowrap leading-tight">
+            <span className="font-display text-base font-extrabold tracking-wide">TURKISH WITH <span lang="tr">AYLİN</span></span>
+            <span className="text-[11px] font-medium tracking-wide text-white/80">Real Turkish Real Progress</span>
+          </span>
         </a>
 
         <div className="hidden lg:flex items-center gap-2">
