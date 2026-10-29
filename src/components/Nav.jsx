@@ -27,7 +27,7 @@ export default function Nav() {
 
   const linkStyle = (href) => {
     const active = href === '/blog' && path.startsWith('/blog')
-    return href === '/#booking' || active
+    return active
       ? 'rounded-full bg-white px-3.5 py-2 text-sm font-semibold text-teal-700 shadow-sm hover:bg-amber-50 transition-colors'
       : 'rounded-full border border-white/30 bg-white/10 px-3.5 py-2 text-sm font-medium text-white hover:bg-white hover:text-teal-700 hover:border-white transition-colors'
   }
