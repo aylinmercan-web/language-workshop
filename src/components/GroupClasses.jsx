@@ -1,4 +1,5 @@
 import { site } from '../config'
+import WhatsAppIcon from './WhatsAppIcon'
 
 const groups = [
   {
@@ -52,9 +53,10 @@ export default function GroupClasses() {
                   href={whatsappLink(g.level)}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex justify-center rounded-lg bg-[#25D366] px-4 py-2 text-sm font-semibold text-white hover:bg-[#1EBE5A] transition-colors"
+                  className="btn-primary gap-2"
                 >
-                  Ask on WhatsApp
+                  <WhatsAppIcon className="h-4 w-4" />
+                  Ask about this class
                 </a>
               )}
             </div>
