@@ -53,6 +53,33 @@ function Block({ block, showAll }) {
     )
   }
 
+  if (block.image) {
+    return (
+      <figure className="my-8 flex flex-col items-center">
+        <img src={block.image.src} alt={block.image.alt} className="w-64 rounded-xl shadow-md" loading="lazy" />
+        <figcaption className="mt-2 text-sm text-muted">{block.image.caption}</figcaption>
+      </figure>
+    )
+  }
+
+  if (block.video) {
+    return (
+      <figure className="my-8">
+        <div className="relative w-full overflow-hidden rounded-xl bg-soft" style={{ paddingTop: '56.25%' }}>
+          <iframe
+            className="absolute inset-0 h-full w-full"
+            src={`https://www.youtube-nocookie.com/embed/${block.video.id}`}
+            title={block.video.title}
+            loading="lazy"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+        <figcaption className="mt-2 text-sm text-muted">{block.video.caption}</figcaption>
+      </figure>
+    )
+  }
+
   if (block.tip) {
     return (
       <div className="my-6 rounded-xl border-l-4 border-primary bg-mint px-5 py-4">

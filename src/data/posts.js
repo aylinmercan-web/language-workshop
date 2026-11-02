@@ -7,6 +7,110 @@ export const categories = [
 
 const posts = [
   {
+    slug: 'ataturkun-hayati',
+    category: 'culture',
+    date: '2026-11-02',
+    level: 'A2',
+    minutes: 4,
+    title: 'Mustafa Kemal Atatürk’ün Hayatı',
+    titleEn: 'The Life of Mustafa Kemal Atatürk',
+    summaryTr: 'Selanik’te doğan bir çocuk nasıl Türkiye Cumhuriyeti’nin kurucusu oldu? Atatürk’ün hayatı hakkında kolay bir okuma.',
+    summary: 'How did a boy born in Salonica become the founder of the Republic of Turkey? An easy A2 Turkish reading about the life of Atatürk, with English translation and key words.',
+    blocks: [
+      { image: { src: '/blog/ataturk.jpg', alt: 'Mustafa Kemal Atatürk', caption: 'Mustafa Kemal Atatürk (1881–1938)' } },
+      {
+        p: {
+          tr: 'Türkiye’de her şehirde onun adını görürsünüz: caddelerde, okullarda, havalimanlarında. Paraların ve okul sınıflarının duvarlarında onun fotoğrafı vardır. O, Türkiye Cumhuriyeti’nin kurucusu Mustafa Kemal Atatürk’tür.',
+          en: 'You will see his name in every city in Turkey: on streets, schools and airports. His photo is on the money and on the walls of school classrooms. He is Mustafa Kemal Atatürk, the founder of the Republic of Turkey.',
+        },
+      },
+      { h: { tr: 'Çocukluğu', en: 'Childhood' } },
+      {
+        p: {
+          tr: 'Mustafa 1881 yılında Selanik’te doğdu. Babasının adı Ali Rıza Efendi, annesinin adı Zübeyde Hanım’dı. Babası, Mustafa küçükken öldü.',
+          en: 'Mustafa was born in Salonica in 1881. His father’s name was Ali Rıza Efendi and his mother’s name was Zübeyde Hanım. His father died when Mustafa was a little boy.',
+        },
+      },
+      {
+        p: {
+          tr: 'Mustafa askerî okula gitti. Matematik dersini çok seviyordu. Bir gün matematik öğretmeni ona “Kemal” adını verdi. Kemal, “olgunluk, mükemmellik” demektir. O günden sonra adı Mustafa Kemal oldu.',
+          en: 'Mustafa went to a military school. He loved maths. One day his maths teacher gave him the name “Kemal”, which means “maturity, perfection”. From that day on, his name was Mustafa Kemal.',
+        },
+      },
+      {
+        video: {
+          id: '27sKWsx_piI',
+          title: 'The Life of Atatürk Part 1 | Childhood Years',
+          caption: 'Atatürk’ün çocukluğu hakkında İngilizce kısa bir çizgi film · A short animated film in English about Atatürk’s childhood. Video: Nesillerce Atatürk (YouTube)',
+        },
+      },
+      { h: { tr: 'Asker Mustafa Kemal', en: 'Mustafa Kemal the soldier' } },
+      {
+        p: {
+          tr: 'Mustafa Kemal İstanbul’da Harp Okulu’nu ve Harp Akademisi’ni bitirdi ve subay oldu. 1915’te Çanakkale Savaşı’nda başarılı bir komutan olarak tanındı.',
+          en: 'Mustafa Kemal graduated from the Military School and the War Academy in İstanbul and became an officer. In 1915, he became known as a successful commander in the Battle of Gallipoli (Çanakkale).',
+        },
+      },
+      { h: { tr: 'Kurtuluş Savaşı', en: 'The War of Independence' } },
+      {
+        p: {
+          tr: 'Birinci Dünya Savaşı’ndan sonra yabancı ordular Anadolu’nun birçok yerini işgal etti. Mustafa Kemal 19 Mayıs 1919’da Samsun’a gitti ve Kurtuluş Savaşı’nı başlattı. 23 Nisan 1920’de Ankara’da Türkiye Büyük Millet Meclisi açıldı.',
+          en: 'After the First World War, foreign armies occupied many parts of Anatolia. On 19 May 1919, Mustafa Kemal went to Samsun and started the War of Independence. On 23 April 1920, the Grand National Assembly of Turkey opened in Ankara.',
+        },
+      },
+      {
+        p: {
+          tr: 'Savaş zor ve uzun sürdü. 30 Ağustos 1922’de Türk ordusu büyük bir zafer kazandı.',
+          en: 'The war was hard and long. On 30 August 1922, the Turkish army won a great victory.',
+        },
+      },
+      { h: { tr: 'Cumhuriyet', en: 'The Republic' } },
+      {
+        p: {
+          tr: '29 Ekim 1923’te Türkiye Cumhuriyeti ilan edildi. Başkent Ankara oldu. Mustafa Kemal Türkiye’nin ilk cumhurbaşkanı oldu.',
+          en: 'On 29 October 1923, the Republic of Turkey was declared. Ankara became the capital, and Mustafa Kemal became the first president of Turkey.',
+        },
+      },
+      { h: { tr: 'Yenilikler', en: 'Reforms' } },
+      {
+        p: {
+          tr: 'Atatürk ülkede birçok yenilik yaptı. 1928’de Türkçe için yeni bir alfabe geldi: Bugün sizin öğrendiğiniz Latin harfli Türk alfabesi! Kadınlar 1930’da yerel seçimlerde, 1934’te de milletvekili seçimlerinde oy kullanma hakkı kazandı.',
+          en: 'Atatürk made many reforms in the country. In 1928, Turkish got a new alphabet: the Latin-based Turkish alphabet you are learning today! Women won the right to vote in local elections in 1930 and in parliamentary elections in 1934.',
+        },
+      },
+      {
+        p: {
+          tr: '1934’te Soyadı Kanunu çıktı ve herkes bir soyadı aldı. Meclis, Mustafa Kemal’e “Atatürk” soyadını verdi. Bu soyadı “Türklerin atası” demektir.',
+          en: 'In 1934, the Surname Law was passed and everyone took a surname. The Assembly gave Mustafa Kemal the surname “Atatürk”, which means “father of the Turks”.',
+        },
+      },
+      { h: { tr: '10 Kasım', en: '10 November' } },
+      {
+        p: {
+          tr: 'Atatürk 10 Kasım 1938’de, sabah dokuzu beş geçe İstanbul’da, Dolmabahçe Sarayı’nda öldü. Bugün mezarı Ankara’daki Anıtkabir’dedir.',
+          en: 'Atatürk died at five past nine in the morning on 10 November 1938, at Dolmabahçe Palace in İstanbul. Today his tomb is at Anıtkabir in Ankara.',
+        },
+      },
+    ],
+    glossary: [
+      ['doğmak', 'to be born'],
+      ['askerî okul', 'military school'],
+      ['savaş', 'war'],
+      ['komutan', 'commander'],
+      ['işgal etmek', 'to occupy'],
+      ['zafer', 'victory'],
+      ['meclis', 'parliament, assembly'],
+      ['cumhuriyet', 'republic'],
+      ['cumhurbaşkanı', 'president'],
+      ['soyadı', 'surname'],
+      ['saygı duruşu', 'moment of silence'],
+    ],
+    note: {
+      tr: 'Her yıl 10 Kasım’da saat 09.05’te Türkiye’de sirenler çalar. İnsanlar olduğu yerde durur, arabalar durur ve herkes iki dakika saygı duruşunda bulunur. O gün Türkiye’deyseniz siz de durabilirsiniz.',
+      en: 'Every year on 10 November at 9:05 a.m., sirens sound across Turkey. People stop where they are, cars stop, and everyone stands in silence for two minutes. If you are in Turkey on that day, you can stop too.',
+    },
+  },
+  {
     slug: 'cay-saati',
     category: 'readings',
     date: '2026-10-26',
