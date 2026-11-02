@@ -7,6 +7,99 @@ export const categories = [
 
 const posts = [
   {
+    slug: 'gobeklitepe',
+    category: 'culture',
+    date: '2026-11-03',
+    level: 'B1',
+    minutes: 5,
+    title: 'Türkiye’de Gezilecek Yerler 2: Göbeklitepe',
+    titleEn: 'Places to See in Turkey 2: Göbeklitepe',
+    summaryTr: 'Piramitlerden 7 bin yıl daha eski taş sütunlar, binlerce yıl onları saklayan bir tepe ve hâlâ cevap bekleyen sorular: Göbeklitepe.',
+    summary: 'Stone pillars 7,000 years older than the pyramids, a hill that hid them for millennia and questions still waiting for answers. A B1 Turkish reading about Göbeklitepe, with video and key words.',
+    blocks: [
+      {
+        p: {
+          tr: 'Şanlıurfa’nın yaklaşık 15 kilometre kuzeydoğusunda, Örencik köyünün yakınında yuvarlak bir tepe vardır. Köylüler bu tepeye yıllarca “Göbekli Tepe” dedi, çünkü uzaktan bakınca karnı şişkin bir göbeğe benziyordu. Tepenin üstünde tek bir dut ağacı vardı ve insanlar oraya dilek dilemeye giderdi. Altında ne olduğunu ise kimse bilmiyordu.',
+          en: 'About 15 kilometres north-east of Şanlıurfa, near the village of Örencik, there is a round hill. For years the villagers called it “Göbekli Tepe” (Potbelly Hill), because from a distance it looked like a swollen belly. There was a single mulberry tree on top of the hill, and people used to go there to make wishes. But nobody knew what was underneath.',
+        },
+      },
+      { h: { tr: 'Bir Mezarlık Mı, Bir Tapınak Mı?', en: 'A Cemetery or a Temple?' } },
+      {
+        p: {
+          tr: '1963’te İstanbul Üniversitesi ve Chicago Üniversitesi’nden bir ekip bölgede araştırma yaptı. Tepede kırık taş parçaları gördüler ama bunun bir Orta Çağ mezarlığı olduğunu düşündüler ve çok üzerinde durmadılar. Göbeklitepe otuz yıl daha unutulmuş olarak kaldı.',
+          en: 'In 1963 a team from İstanbul University and the University of Chicago carried out a survey in the area. They saw broken pieces of stone on the hill, but they thought it was a medieval cemetery and did not pay much attention to it. Göbeklitepe remained forgotten for another thirty years.',
+        },
+      },
+      {
+        p: {
+          tr: '1994’te Alman arkeolog Klaus Schmidt eski raporları okurken bu tepeye merak sardı ve bölgeye geldi. Taşlara bakınca bunların sıradan taşlar olmadığını hemen anladı. Bir yıl sonra Şanlıurfa Müzesi ile birlikte kazılara başladı. Toprağın altından çıkanlar bütün dünyayı şaşırttı.',
+          en: 'In 1994, while reading old reports, the German archaeologist Klaus Schmidt became curious about this hill and came to the area. When he looked at the stones, he immediately understood that they were not ordinary stones. A year later, together with the Şanlıurfa Museum, he began excavations. What came out from under the ground surprised the whole world.',
+        },
+      },
+      { h: { tr: 'T Şeklinde Dev Sütunlar', en: 'Giant T-Shaped Pillars' } },
+      {
+        p: {
+          tr: 'Kazılarda daire şeklinde yapılar ve bunların içinde T harfi şeklinde dev taş sütunlar bulundu. Bazı sütunlar beş metreden uzun ve tonlarca ağırlıkta. Sütunların üzerinde tilki, yaban domuzu, yılan, akbaba ve akrep gibi hayvanların kabartmaları var. Ortadaki büyük sütunlarda ise kollar, eller ve bir kemer görülüyor. Yani bu sütunlar aslında insan ya da insana benzeyen varlıkları anlatıyor olabilir.',
+          en: 'The excavations uncovered circular structures with giant T-shaped stone pillars inside them. Some pillars are more than five metres tall and weigh several tonnes. On the pillars there are reliefs of animals such as foxes, wild boars, snakes, vultures and scorpions. On the large pillars in the middle, you can see arms, hands and a belt. So these pillars may actually represent humans or human-like beings.',
+        },
+      },
+      { h: { tr: 'Piramitlerden 7 Bin Yıl Önce', en: '7,000 Years Before the Pyramids' } },
+      {
+        p: {
+          tr: 'Göbeklitepe’yi bu kadar önemli yapan şey yaşı. Yapılar yaklaşık 12 bin yıl önce yapıldı. Bu, Mısır piramitlerinden 7 bin yıl, İngiltere’deki Stonehenge’den 6 bin yıl daha eski demek. O dönemde insanlar henüz tarım yapmıyordu; yazı, tekerlek ve çanak çömlek de yoktu. İnsanlar avlanarak ve doğadan bitki toplayarak yaşıyordu.',
+          en: 'What makes Göbeklitepe so important is its age. The structures were built about 12,000 years ago. That means 7,000 years older than the Egyptian pyramids and 6,000 years older than Stonehenge in England. At that time people were not yet farming; there was no writing, no wheel and no pottery. People lived by hunting and gathering plants from nature.',
+        },
+      },
+      {
+        p: {
+          tr: 'Uzun yıllar boyunca bilim insanları şöyle düşünüyordu: Önce insanlar tarım yapmaya başladı, köylere yerleşti, sonra da tapınaklar yaptı. Göbeklitepe bu sırayı tersine çevirdi. Klaus Schmidt’e göre burada önce tapınak geldi, sonra şehir. Yani avcı-toplayıcılar büyük bir iş için bir araya geldi ve belki de bu yüzden yerleşik hayata geçti.',
+          en: 'For many years, scientists thought like this: first people started farming, settled in villages, and then built temples. Göbeklitepe turned this order upside down. According to Klaus Schmidt, here the temple came first, then the city. In other words, hunter-gatherers came together for a big project, and perhaps that is why they moved to a settled life.',
+        },
+      },
+      {
+        p: {
+          tr: 'Bugün bazı araştırmacılar Göbeklitepe’nin sadece bir tapınak olmadığını, burada insanların yaşadığını da düşünüyor. Yani tartışma hâlâ devam ediyor. Ama herkesin hemfikir olduğu bir şey var: Göbeklitepe, insanlık tarihini yeniden düşünmemizi sağladı. Bu yüzden ona “tarihin sıfır noktası” deniyor.',
+          en: 'Today some researchers think that Göbeklitepe was not only a temple, but that people also lived here. So the debate is still going on. But there is one thing everyone agrees on: Göbeklitepe made us rethink human history. That is why it is called “the zero point of history”.',
+        },
+      },
+      {
+        video: {
+          id: 'kRow4ELfGO0',
+          title: 'Tarihin Akışını Değiştiren Keşif: Göbeklitepe',
+          caption: 'Tarihin Akışını Değiştiren Keşif: Göbeklitepe · The Discovery That Changed the Course of History: Göbeklitepe. Video: Koç Üniversitesi (YouTube)',
+        },
+      },
+      {
+        source: {
+          tr: 'Kaynak: A. Buğra Tokmakoğlu, “Türkiye’de Görmeniz Gereken 10 Yer”, Turna.com',
+          url: 'https://www.turna.com/blog/turkiye-gezilecek-yerler',
+        },
+      },
+    ],
+    glossary: [
+      ['tepe', 'hill'],
+      ['göbek', 'belly, navel'],
+      ['dilek dilemek', 'to make a wish'],
+      ['mezarlık', 'cemetery'],
+      ['tapınak', 'temple'],
+      ['üzerinde durmak', 'to dwell on, to pay attention to'],
+      ['merak sarmak', 'to become curious about'],
+      ['kazı', 'excavation'],
+      ['sütun', 'pillar, column'],
+      ['kabartma', 'relief (carving)'],
+      ['akbaba', 'vulture'],
+      ['çanak çömlek', 'pottery'],
+      ['avcı-toplayıcı', 'hunter-gatherer'],
+      ['yerleşik hayat', 'settled life'],
+      ['tersine çevirmek', 'to turn upside down, to reverse'],
+      ['hemfikir olmak', 'to agree'],
+    ],
+    note: {
+      tr: 'Göbeklitepe 2018’de UNESCO Dünya Mirası Listesi’ne girdi ve 2019 yılı Türkiye’de “Göbeklitepe Yılı” ilan edildi. Bugün ziyaretçiler kazı alanını, üstü kapalı yürüyüş yollarından gezebiliyor. Bulunan sütunların ve heykellerin bir kısmı ise Şanlıurfa Arkeoloji Müzesi’nde.',
+      en: 'Göbeklitepe was added to the UNESCO World Heritage List in 2018, and 2019 was declared the “Year of Göbeklitepe” in Turkey. Today visitors can see the excavation site from covered walkways. Some of the pillars and statues found here are in the Şanlıurfa Archaeology Museum.',
+    },
+  },
+  {
     slug: 'sumela-manastirinin-hikayesi',
     category: 'culture',
     date: '2026-11-03',
