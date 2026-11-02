@@ -316,7 +316,7 @@ const posts = [
   },
   {
     slug: 'cay-saati',
-    category: 'readings',
+    category: 'culture',
     date: '2026-10-26',
     level: 'A1',
     minutes: 2,
