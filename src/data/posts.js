@@ -212,7 +212,7 @@ const posts = [
   },
   {
     slug: 'ataturkun-hayati',
-    category: 'culture',
+    category: 'readings',
     date: '2026-11-02',
     level: 'A2',
     minutes: 4,
@@ -367,7 +367,7 @@ const posts = [
   },
   {
     slug: 'nazar-boncugu',
-    category: 'readings',
+    category: 'culture',
     date: '2026-10-26',
     level: 'A2',
     minutes: 3,
@@ -424,7 +424,7 @@ const posts = [
   },
   {
     slug: 'bayram-sabahi',
-    category: 'readings',
+    category: 'culture',
     date: '2026-10-26',
     level: 'B1',
     minutes: 4,
