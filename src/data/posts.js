@@ -253,6 +253,26 @@ const posts = [
           en: 'Guests are usually offered Turkish delight, baklava and, of course, Turkish coffee. Bayram is a time when people who have fallen out make up, relatives far away get a phone call, and everyone comes a little closer to each other.',
         },
       },
+      { h: { tr: 'Bir Bayram Şarkısı', en: 'A Bayram Song' } },
+      {
+        p: {
+          tr: 'Bayram denince birçok kişinin aklına bir şarkı gelir: Barış Manço’nun “Bugün Bayram” şarkısı. Barış Manço 1943’te İstanbul’da doğdu. Uzun saçları, bıyığı ve parmaklarındaki büyük yüzükleriyle tanındı. Televizyondaki “7’den 77’ye” programıyla dünyayı gezdi ve gördüğü ülkeleri Türkiye’ye anlattı.',
+          en: 'When people think of bayram, many of them think of a song: “Bugün Bayram” (Today Is a Holiday) by Barış Manço. Barış Manço was born in İstanbul in 1943. He was known for his long hair, his moustache and the big rings on his fingers. With his TV programme “7’den 77’ye” (From 7 to 77), he travelled the world and told Turkey about the countries he saw.',
+        },
+      },
+      {
+        p: {
+          tr: 'Türkiye’de çocuklar da büyükler de onu çok sevdi. Herkes ona “Barış Abi” dedi. Barış Manço 1 Şubat 1999’da vefat etti. Ama şarkıları bugün hâlâ her yerde dinleniyor ve o, Türkiye’nin simgelerinden biri.',
+          en: 'In Turkey, children and adults alike loved him very much. Everyone called him “Barış Abi” (Big Brother Barış). Barış Manço passed away on 1 February 1999. But his songs are still listened to everywhere today, and he is one of the symbols of Turkey.',
+        },
+      },
+      {
+        video: {
+          id: 'H5DpbAiw83k',
+          title: 'Barış Manço - Bugün Bayram',
+          caption: 'Barış Manço’nun “Bugün Bayram” şarkısı · “Bugün Bayram” (Today Is a Holiday), a song by Barış Manço. Video: netd müzik (YouTube)',
+        },
+      },
     ],
     glossary: [
       ['bayram', 'religious or national holiday'],
@@ -263,6 +283,9 @@ const posts = [
       ['ikram etmek', 'to offer (food or drink) to guests'],
       ['küs', 'not on speaking terms'],
       ['barışmak', 'to make up'],
+      ['abi', 'big brother; also a warm way to address an older man'],
+      ['vefat etmek', 'to pass away'],
+      ['simge', 'symbol'],
     ],
     note: {
       tr: 'Şeker Bayramı’na Ramazan Bayramı da denir ve üç gün sürer. Ay takvimine göre kutlandığı için tarihi her yıl yaklaşık on bir gün öne gelir. En çok kullanılan bayram dilekleri “İyi bayramlar!” ve “Bayramınız kutlu olsun!”dur.',
