@@ -62,6 +62,16 @@ function Block({ block, showAll }) {
     )
   }
 
+  if (block.source) {
+    return (
+      <p className="mt-6 text-sm text-muted">
+        <a href={block.source.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+          {block.source.tr}
+        </a>
+      </p>
+    )
+  }
+
   if (block.video) {
     return (
       <figure className="my-8">

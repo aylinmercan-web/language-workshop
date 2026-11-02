@@ -7,6 +7,123 @@ export const categories = [
 
 const posts = [
   {
+    slug: 'sumela-manastirinin-hikayesi',
+    category: 'culture',
+    date: '2026-11-03',
+    level: 'B2',
+    minutes: 6,
+    title: 'Türkiye’de Gezilecek Yerler 1: Sümela Manastırı’nın Hikâyesi',
+    titleEn: 'Places to See in Turkey 1: The Story of Sumela Monastery',
+    summaryTr: 'İki keşiş aynı gece aynı rüyayı görür ve Atina’dan Trabzon’a uzanan bir yolculuk başlar. Sümela Manastırı’nın efsanesi.',
+    summary: 'Two monks have the same dream on the same night, and a journey from Athens to Trabzon begins. A B2 Turkish reading about the legend of Sumela Monastery, with video and key words.',
+    blocks: [
+      {
+        p: {
+          tr: 'Trabzon’un Maçka ilçesinde, Altındere Vadisi’nde, sarp bir kayalığın ortasında bir manastır vardır. Aşağıdan bakınca sanki kayaya yapıştırılmış gibi durur. Bu manastırın nasıl yapıldığına dair yüzyıllardır anlatılan bir efsane var. Efsaneye göre her şey Trabzon’dan çok uzakta, Atina’da başlar.',
+          en: 'In the Maçka district of Trabzon, in the Altındere Valley, there is a monastery in the middle of a steep cliff. From below, it looks as if it has been glued to the rock. There is a legend that has been told for centuries about how this monastery was built. According to the legend, everything begins far from Trabzon, in Athens.',
+        },
+      },
+      { h: { tr: 'Aynı Gece, Aynı Rüya', en: 'The Same Night, the Same Dream' } },
+      {
+        p: {
+          tr: 'Yıl 385. Atina’daki bir manastırda yaşayan iki keşiş, Barnabas ile Sophronios, bir kış akşamı her zamanki gibi dualarını bitirip odalarına çekilirler. Barnabas yatmadan önce bir süre kitap okur, sonra gözleri yavaş yavaş kapanır. Uykuyla uyanıklık arasındayken oda birden aydınlanır. Karşısında İsa’nın öğrencilerinden Aziz Luka durmaktadır.',
+          en: 'The year is 385. Two monks living in a monastery in Athens, Barnabas and Sophronios, finish their prayers one winter evening as usual and retire to their rooms. Before going to bed, Barnabas reads for a while, then his eyes slowly close. Between sleep and waking, the room suddenly fills with light. In front of him stands Saint Luke, one of the disciples of Jesus.',
+        },
+      },
+      {
+        p: {
+          tr: 'Aziz Luka’nın elinde Meryem Ana’nın bir ikonası vardır. Barnabas’a şöyle der: “Bu ikona şimdi Karadeniz kıyısında, Trabzon’da bir kilisede duruyor. Sen oraya gideceksin. Sana göstereceğim dağın yamacına bir manastır yapacak ve ikonayı oraya koyacaksın.” Barnabas’ın gözlerinin önünde ormanlarla kaplı dik dağlar belirir, sonra da kayalığın ortasında yükselen bir manastır. Işık söner ve Aziz Luka kaybolur.',
+          en: 'Saint Luke is holding an icon of the Virgin Mary. He says to Barnabas: “This icon is now in a church in Trabzon, on the Black Sea coast. You will go there. You will build a monastery on the side of the mountain I will show you, and you will place the icon there.” Steep, forest-covered mountains appear before Barnabas’s eyes, and then a monastery rising in the middle of the cliff. The light goes out and Saint Luke disappears.',
+        },
+      },
+      {
+        p: {
+          tr: 'Sabah olunca Barnabas gördüklerini baş keşişe anlatmak için kapısının önünde beklemeye başlar. İçeride Sophronios vardır. Sıra kendisine gelince Barnabas rüyasını en başından anlatır. Baş keşiş dinledikçe şaşırır, çünkü birkaç dakika önce Sophronios’tan da tıpatıp aynı hikâyeyi dinlemiştir. İkisini birden karşısına oturtur:',
+          en: 'In the morning, Barnabas waits outside the head monk’s door to tell him what he saw. Sophronios is inside. When his turn comes, Barnabas tells his dream from the very beginning. The more the head monk listens, the more surprised he is, because a few minutes earlier he heard exactly the same story from Sophronios. He sits them both down in front of him:',
+        },
+      },
+      {
+        p: {
+          tr: '“Demek ki ikiniz de aynı gece aynı rüyayı gördünüz. Bu bir tesadüf olamaz. Size verilen görevi yerine getirmek zorundasınız. Ama böyle büyük bir iş için imparatorun izni gerekir. Size bir mektup yazacağım. Konstantinopolis’e gidip bunu Patrik’e verin. O sizi imparatora götürür.”',
+          en: '“So you both had the same dream on the same night. This cannot be a coincidence. You must carry out the task you have been given. But a great work like this needs the emperor’s permission. I will write you a letter. Go to Constantinople and give it to the Patriarch. He will take you to the emperor.”',
+        },
+      },
+      { h: { tr: 'İmparatorun Huzurunda', en: 'Before the Emperor' } },
+      {
+        p: {
+          tr: 'İki keşiş ertesi gün yola çıkar. Konstantinopolis’te Patrik onları dinler ve İmparator Theodosius’un huzuruna çıkarır. “Majesteleri, bu iki keşiş sizden bir izin ve biraz da yardım istiyor,” der Patrik. İmparator keşişlere döner: “Anlatın bakalım.”',
+          en: 'The two monks set off the next day. In Constantinople, the Patriarch listens to them and brings them before Emperor Theodosius. “Your Majesty, these two monks are asking you for permission and a little help,” says the Patriarch. The emperor turns to the monks: “Go on, tell me.”',
+        },
+      },
+      {
+        p: {
+          tr: 'Barnabas rüyayı bir kez daha anlatır. İmparator bir süre düşünür, sonra sorar: “Trabzon’a gittiğinizde rüyanızda gördüğünüz yeri gerçekten bulabilecek misiniz? Orası çok büyük bir yer.” “Bulacağız Majesteleri,” der Barnabas. “Aziz Luka bize o yeri o kadar açık gösterdi ki başka bir yerle karıştırmamız imkânsız.”',
+          en: 'Barnabas tells the dream once more. The emperor thinks for a while, then asks: “When you go to Trabzon, will you really be able to find the place you saw in your dream? It is a very big place.” “We will find it, Your Majesty,” says Barnabas. “Saint Luke showed us the place so clearly that we cannot possibly mistake it for anywhere else.”',
+        },
+      },
+      {
+        p: {
+          tr: '“Öyleyse sizi destekleyeceğim,” der imparator. “Trabzon valisine bir mektup yazacağım. Size ne gerekirse verilecek: işçi, malzeme, para. Çalışmalarınızı da yakından takip edeceğim.”',
+          en: '“Then I will support you,” says the emperor. “I will write a letter to the governor of Trabzon. You will be given whatever you need: workers, materials, money. I will also follow your work closely.”',
+        },
+      },
+      { h: { tr: 'Mela Tepesi', en: 'Mela Hill' } },
+      {
+        p: {
+          tr: 'Keşişlerin Trabzon’a varması bir buçuk ay sürer. Vali, imparatorun mektubunu okuyunca hemen hazırlıklara başlar. Bir hafta sonra iki keşişin yanına elli işçi verilir, malzemeler arabalara yüklenir ve yola çıkarlar. Günlerce dağlarda dolaşırlar. Sonunda bir derenin kenarında durup başlarını kaldırdıklarında, karşılarındaki yamaçta rüyalarında gördükleri tepeyi tanırlar: Mela Tepesi. Aradıkları yer burasıdır.',
+          en: 'It takes the monks a month and a half to reach Trabzon. When the governor reads the emperor’s letter, he starts the preparations at once. A week later, the two monks are given fifty workers, the materials are loaded onto carts and they set off. For days they wander through the mountains. Finally, when they stop by a stream and look up, they recognise the hill from their dream on the slope in front of them: Mela Hill. This is the place they have been looking for.',
+        },
+      },
+      {
+        p: {
+          tr: 'Ama iş hiç de kolay değildir. Manastırı kayaların içine oyarak yapmaları gerekir ve o dönemin aletleriyle sert kayayı delmek çok zordur. Yine de pes etmezler. İmparatorun emriyle derenin kenarında küçük bir köy kurulur, işçilerin sayısı beş yüze çıkar. Dokuz yıl süren çalışmanın sonunda kayanın içinde ancak bir kilise bölümü açılabilir. Ama bu bile yeterlidir: İlk Sümela Manastırı kurulmuştur. Barnabas ve Sophronios ikonayı yerine koyar ve hayatlarının geri kalanını orada geçirir.',
+          en: 'But the work is not easy at all. They have to carve the monastery into the rock, and drilling through hard rock with the tools of that time is very difficult. Still, they do not give up. By the emperor’s order, a small village is built by the stream and the number of workers rises to five hundred. After nine years of work, only a church section can be opened inside the rock. But even this is enough: the first Sumela Monastery has been founded. Barnabas and Sophronios put the icon in its place and spend the rest of their lives there.',
+        },
+      },
+      {
+        p: {
+          tr: 'Bugün gördüğümüz manastır, yüzyıllar içinde eklenen yeni bölümlerle büyümüştür. Efsanenin ne kadarı gerçek, kimse bilmiyor. Ama o sarp kayalığa bakınca, birilerinin oraya bir manastır yapmayı nasıl düşündüğünü insan merak etmeden duramıyor.',
+          en: 'The monastery we see today has grown with new sections added over the centuries. No one knows how much of the legend is true. But when you look at that steep cliff, you cannot help wondering how anyone ever thought of building a monastery there.',
+        },
+      },
+      {
+        video: {
+          id: '0YLXVOP-nUg',
+          title: 'Sümela Manastırı',
+          caption: 'Sümela Manastırı hakkında bir video · A video about Sumela Monastery (YouTube)',
+        },
+      },
+      {
+        source: {
+          tr: 'Kaynak: Hıncal Uluç, “Sümela Manastırı’nın Öyküsü”, Sabah, 16 Mart 2014',
+          url: 'https://www.sabah.com.tr/yazarlar/uluc/2014/03/16/sumela-manastirinin-oykusu',
+        },
+      },
+    ],
+    glossary: [
+      ['keşiş', 'monk'],
+      ['manastır', 'monastery'],
+      ['ikona', 'icon (religious painting)'],
+      ['sarp', 'steep, rugged'],
+      ['yamaç', 'slope, hillside'],
+      ['kayalık', 'cliff, rocky place'],
+      ['odasına çekilmek', 'to retire to one’s room'],
+      ['belirmek', 'to appear'],
+      ['tıpatıp', 'exactly the same'],
+      ['tesadüf', 'coincidence'],
+      ['görevi yerine getirmek', 'to carry out a task'],
+      ['huzuruna çıkmak', 'to appear before (a ruler)'],
+      ['karıştırmak', 'to mix up, to confuse'],
+      ['malzeme', 'material, supplies'],
+      ['oymak', 'to carve'],
+      ['pes etmek', 'to give up'],
+    ],
+    note: {
+      tr: 'Sümela Manastırı her yıl 15 Ağustos’ta Meryem Ana Günü’nde özel bir ayine ev sahipliği yapar. Manastıra, Altındere Vadisi Milli Parkı’ndaki ormanın içinden yürüyerek çıkılır.',
+      en: 'Every year on 15 August, the Feast of the Assumption, Sumela Monastery hosts a special service. You reach the monastery on foot through the forest of Altındere Valley National Park.',
+    },
+  },
+  {
     slug: 'ataturkun-hayati',
     category: 'culture',
     date: '2026-11-02',
