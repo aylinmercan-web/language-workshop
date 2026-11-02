@@ -69,12 +69,6 @@ const posts = [
           caption: 'Tarihin Akışını Değiştiren Keşif: Göbeklitepe · The Discovery That Changed the Course of History: Göbeklitepe. Video: Koç Üniversitesi (YouTube)',
         },
       },
-      {
-        source: {
-          tr: 'Kaynak: A. Buğra Tokmakoğlu, “Türkiye’de Görmeniz Gereken 10 Yer”, Turna.com',
-          url: 'https://www.turna.com/blog/turkiye-gezilecek-yerler',
-        },
-      },
     ],
     glossary: [
       ['tepe', 'hill'],
@@ -188,7 +182,7 @@ const posts = [
       },
       {
         source: {
-          tr: 'Kaynak: Hıncal Uluç, “Sümela Manastırı’nın Öyküsü”, Sabah, 16 Mart 2014',
+          tr: 'Yararlanılan kaynak: Hıncal Uluç, “Sümela Manastırı’nın Öyküsü”, Sabah, 16 Mart 2014',
           url: 'https://www.sabah.com.tr/yazarlar/uluc/2014/03/16/sumela-manastirinin-oykusu',
         },
       },
