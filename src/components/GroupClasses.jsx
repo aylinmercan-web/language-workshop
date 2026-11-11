@@ -6,20 +6,20 @@ const groups = [
     level: 'A1',
     title: 'Beginners',
     text: 'Start from zero: greetings, numbers, everyday phrases and the basics of Turkish grammar, step by step.',
-    info: ['4–12 students', 'Twice a week × 90 min (3 hours a week)', '4 months', '$80 / month (12 hours)', 'Lesson materials included'],
+    info: ['Live on Zoom', '4–12 students', 'Twice a week × 90 min (3 hours a week)', '4 months', '$80 / month (12 hours)', 'Lesson materials included'],
     soon: true,
   },
   {
     level: 'A2',
     title: 'Elementary',
     text: 'Build on the basics: talk about your day, your plans and your past, and handle everyday situations in Turkish.',
-    info: ['4–12 students', 'Twice a week × 90 min (3 hours a week)', '4 months', '$80 / month (12 hours)', 'Lesson materials included'],
+    info: ['Live on Zoom', '4–12 students', 'Twice a week × 90 min (3 hours a week)', '4 months', '$80 / month (12 hours)', 'Lesson materials included'],
   },
   {
     level: 'B1–B2',
     title: 'Conversation Club',
     text: 'Speaking and listening only: real-life topics, discussions and role plays to help you speak fluently and confidently.',
-    info: ['4–8 students', 'Once a week, 90 minutes', '$60 / month (4 lessons, 6 hours)'],
+    info: ['Live on Zoom', '4–8 students', 'Once a week, 90 minutes', '$60 / month (4 lessons, 6 hours)'],
   },
 ]
 
