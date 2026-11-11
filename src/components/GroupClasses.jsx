@@ -6,13 +6,13 @@ const groups = [
     level: 'A1',
     title: 'Beginners',
     text: 'Start from zero: greetings, numbers, everyday phrases and the basics of Turkish grammar, step by step.',
-    info: ['4–12 students', '2 hours with a short break', 'Lesson materials included'],
+    info: ['4–12 students', 'Twice a week, 90 minutes', 'Lesson materials included'],
   },
   {
     level: 'A2',
     title: 'Elementary',
     text: 'Build on the basics: talk about your day, your plans and your past, and handle everyday situations in Turkish.',
-    info: ['4–12 students', '2 hours with a short break', 'Lesson materials included'],
+    info: ['4–12 students', 'Twice a week, 90 minutes', 'Lesson materials included'],
   },
   {
     level: 'B1–B2',
