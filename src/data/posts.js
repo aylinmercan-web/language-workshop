@@ -7,6 +7,123 @@ export const categories = [
 
 const posts = [
   {
+    slug: 'turkceyi-kolay-ogrenmek-icin-7-ipucu',
+    category: 'learning',
+    date: '2026-11-12',
+    level: 'B1',
+    minutes: 5,
+    title: 'Türkçeyi Daha Kolay Öğrenmek İçin 7 İpucu',
+    titleEn: '7 Tips to Learn Turkish More Easily',
+    summaryTr: 'Kulağınızı alıştırmaktan her gün yirmi dakikaya: Türkçe öğrenirken işinizi kolaylaştıracak yedi yöntem ve Barış Özcan’dan bir dinleme.',
+    summary: 'From training your ear to twenty minutes a day: seven tips that make learning Turkish easier, plus a listening task with a video by Barış Özcan. A B1 Turkish reading with English translation.',
+    blocks: [
+      {
+        p: {
+          tr: 'Öğrencilerim bana sık sık aynı soruyu soruyor: “Türkçeyi daha hızlı nasıl öğrenebilirim?” Sihirli bir yol yok, ama işinizi kolaylaştıran birkaç yöntem var. İşte en sevdiklerim.',
+          en: 'My students often ask me the same question: “How can I learn Turkish faster?” There is no magic way, but there are a few methods that make it easier. Here are my favourites.',
+        },
+      },
+      { h: { tr: '1. Önce kulağınızı alıştırın', en: '1. Train your ear first' } },
+      {
+        p: {
+          tr: 'Çocuklar dili önce dinleyerek öğrenir. Türkçede ı, ö, ü ve ğ gibi sesler başta zor gelebilir. Kelime ezberlemeden önce bol bol dinleyin ve duyduğunuz cümleleri yüksek sesle tekrar edin.',
+          en: 'Children learn a language by listening first. Sounds like ı, ö, ü and ğ can feel difficult at the beginning. Before memorising words, listen a lot and repeat the sentences you hear out loud.',
+        },
+      },
+      { h: { tr: '2. Aralıklı tekrar yapın', en: '2. Use spaced repetition' } },
+      {
+        p: {
+          tr: 'Yeni bir kelimeyi bugün, üç gün sonra ve bir hafta sonra tekrar edin. Her tekrarda kelime hafızanızda biraz daha sağlam bir yere oturur.',
+          en: 'Review a new word today, three days later and one week later. With every review, the word settles a little more firmly in your memory.',
+        },
+      },
+      { h: { tr: '3. Yatmadan önce çalışın', en: '3. Study before bed' } },
+      {
+        p: {
+          tr: 'Uyku, gün içinde öğrendiklerimizi uzun süreli hafızaya taşır. Yatmadan önce on dakikalık bir tekrar, sabah yarım saatlik bir çalışmadan daha etkili olabilir.',
+          en: 'Sleep moves what we learn during the day into long-term memory. A ten-minute review before bed can be more effective than half an hour of study in the morning.',
+        },
+      },
+      { h: { tr: '4. Sevdiğiniz şeylerle öğrenin', en: '4. Learn with things you love' } },
+      {
+        p: {
+          tr: 'Türk dizilerini mi seviyorsunuz? Yemek tariflerini mi? Futbolu mu? Türkçeyi ilgi alanlarınızla birleştirin. İlgilendiğiniz bir konudaki yeni kelimeler daha kolay akılda kalır.',
+          en: 'Do you love Turkish TV series? Recipes? Football? Combine Turkish with your interests. New words about a topic you care about are easier to remember.',
+        },
+      },
+      { h: { tr: '5. Eski ve yeni bilgiyi karıştırın', en: '5. Mix old and new' } },
+      {
+        p: {
+          tr: 'Bir seferde çok fazla yeni kelime yorucu olur. Bildiğiniz kelimelerle dolu, kolay hikâyeler okuyun. Böylece birkaç yeni kelimenin anlamını sözlüğe bakmadan tahmin edebilirsiniz.',
+          en: 'Too many new words at once is tiring. Read easy stories full of words you already know. That way you can guess the meaning of a few new words without a dictionary.',
+        },
+      },
+      { h: { tr: '6. Yalnız kalmayın', en: '6. Don’t learn alone' } },
+      {
+        p: {
+          tr: 'Kendi başınıza da çalışabilirsiniz, ama bir öğretmen ya da küçük bir grup size hem düzen hem de konuşma fırsatı verir. Hata yapmaktan korkmadan konuşabileceğiniz bir ortam, dil öğrenmenin en hızlı yoludur.',
+          en: 'You can study on your own, but a teacher or a small group gives you both structure and the chance to speak. A place where you can speak without being afraid of making mistakes is the fastest way to learn a language.',
+        },
+      },
+      { h: { tr: '7. Az ama her gün', en: '7. A little, but every day' } },
+      {
+        p: {
+          tr: 'Haftada bir gün üç saat çalışmak yerine her gün yirmi dakika çalışın. Düzenli çalışma bir süre sonra alışkanlığa dönüşür ve Türkçe hayatınızın bir parçası olur.',
+          en: 'Instead of studying for three hours one day a week, study for twenty minutes every day. Regular study becomes a habit after a while, and Turkish becomes part of your life.',
+        },
+      },
+      { h: { tr: 'Dinleyin: KO-KO Tekniği', en: 'Listen: the KO-KO technique' } },
+      {
+        p: {
+          tr: 'Barış Özcan, Türkiye’de bilim ve teknoloji videolarıyla tanınan bir yazar ve sunucu. Bu videoda yabancı dil öğrenmenin en hızlı yolunu anlatıyor. Videoyu izleyin ve aşağıdaki sorulara cevap vermeye çalışın.',
+          en: 'Barış Özcan is a writer and presenter known in Turkey for his science and technology videos. In this video he talks about the fastest way to learn a foreign language. Watch the video and try to answer the questions below.',
+        },
+      },
+      {
+        video: {
+          id: 'CgXPnpvrGNM',
+          title: 'Yabancı dil öğrenmenin en hızlı yolu: KO-KO Tekniği',
+          caption: 'Barış Özcan, “Yabancı dil öğrenmenin en hızlı yolu: KO-KO Tekniği” · The fastest way to learn a foreign language: the KO-KO technique (YouTube)',
+        },
+      },
+      {
+        examples: [
+          { tr: '1. Tarzan benzetmesiyle ne anlatılıyor?', en: 'What does the Tarzan comparison explain?' },
+          { tr: '2. Uzmanlar dil öğrenmek hakkında ne söylüyor?', en: 'What do experts say about learning a language?' },
+          { tr: '3. “Tutarlı olun” ne anlama geliyor?', en: 'What does “be consistent” mean?' },
+          { tr: '4. KO-KO tekniği nedir?', en: 'What is the KO-KO technique?' },
+        ],
+      },
+      {
+        p: {
+          tr: 'Sizin yönteminiz ne? Türkçe çalışırken en çok neyin işe yaradığını bana yazın!',
+          en: 'What is your method? Write to me and tell me what works best for you when you study Turkish!',
+        },
+      },
+      {
+        cta: {
+          tr: 'Türkçeyi bir grupla öğrenmek ister misiniz?',
+          en: 'Would you like to learn Turkish in a small group? Online A1 group classes are starting soon.',
+          button: 'Ask about group classes',
+          message: 'Merhaba Aylin! I read your blog and I am interested in the online Turkish group classes.',
+        },
+      },
+    ],
+    glossary: [
+      ['alıştırmak', 'to get (something) used to'],
+      ['ezberlemek', 'to memorise'],
+      ['aralıklı tekrar', 'spaced repetition'],
+      ['hafıza', 'memory'],
+      ['uzun süreli', 'long-term'],
+      ['ilgi alanı', 'area of interest'],
+      ['tahmin etmek', 'to guess'],
+      ['düzen', 'order, structure'],
+      ['alışkanlık', 'habit'],
+      ['tutarlı', 'consistent'],
+      ['benzetme', 'comparison, analogy'],
+    ],
+  },
+  {
     slug: 'gobeklitepe',
     category: 'culture',
     date: '2026-11-03',

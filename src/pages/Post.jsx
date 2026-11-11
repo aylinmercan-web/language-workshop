@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import PostCard, { PostMeta } from '../components/PostCard'
 import posts, { sortedPosts } from '../data/posts'
 import { setPageMeta } from '../utils/meta'
+import { site } from '../config'
 
 function Translation({ text, show }) {
   if (!show) return null
@@ -59,6 +60,19 @@ function Block({ block, showAll }) {
         <img src={block.image.src} alt={block.image.alt} className="w-64 rounded-xl shadow-md" loading="lazy" />
         <figcaption className="mt-2 text-sm text-muted">{block.image.caption}</figcaption>
       </figure>
+    )
+  }
+
+  if (block.cta) {
+    const href = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(block.cta.message)}`
+    return (
+      <div className="my-10 rounded-2xl border border-line bg-soft p-6 text-center">
+        <p lang="tr" className="text-xl font-bold text-ink">{block.cta.tr}</p>
+        <p className="mt-1 text-sm text-muted">{block.cta.en}</p>
+        <a href={href} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block rounded-full bg-brand px-6 py-3 font-semibold text-white hover:opacity-90">
+          {block.cta.button}
+        </a>
+      </div>
     )
   }
 
