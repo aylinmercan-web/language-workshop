@@ -14,14 +14,17 @@ export default function Footer() {
             italki
           </a>
         )}
-        {site.whatsapp && (
-          <a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noreferrer" className="hover:text-brand underline">
-            WhatsApp
-          </a>
-        )}
         {site.email && (
           <a href={`mailto:${site.email}`} className="hover:text-brand underline">
             {site.email}
+          </a>
+        )}
+        {site.youtube && (
+          <a href={site.youtube} target="_blank" rel="noreferrer" aria-label="YouTube" title="YouTube" className="inline-flex items-center hover:opacity-80">
+            <svg viewBox="0 0 28 20" className="h-5 w-7" aria-hidden="true">
+              <rect width="28" height="20" rx="5" fill="#FF0000" />
+              <path d="M11 5.5v9l8-4.5z" fill="#fff" />
+            </svg>
           </a>
         )}
       </div>
