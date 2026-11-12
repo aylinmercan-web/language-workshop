@@ -9,14 +9,14 @@ export default function Footer() {
           <TurkishFlag className="h-3 w-[18px] rounded-[2px]" />
           © {new Date().getFullYear()} Aylin Mercan · Online Turkish lessons
         </span>
-        {site.italki && (
-          <a href={site.italki} target="_blank" rel="noreferrer" className="hover:text-brand underline">
-            italki
-          </a>
-        )}
         {site.email && (
           <a href={`mailto:${site.email}`} className="hover:text-brand underline">
             {site.email}
+          </a>
+        )}
+        {site.italki && (
+          <a href={site.italki} target="_blank" rel="noreferrer" className="hover:text-brand underline">
+            italki
           </a>
         )}
         {site.youtube && (
