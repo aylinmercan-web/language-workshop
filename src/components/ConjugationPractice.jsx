@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { verbs, persons, tenses, conjugate } from '../data/conjugation'
 
 const letters = ['ç', 'ğ', 'ı', 'İ', 'ö', 'ş', 'ü']
@@ -31,6 +31,10 @@ export default function ConjugationPractice() {
   const [showTable, setShowTable] = useState(false)
   const inputRef = useRef(null)
 
+  useEffect(() => {
+    setQ((prev) => randomQuestion(prev))
+  }, [])
+
   const verb = verbs[q.v]
   const person = persons[q.p]
   const tenseInfo = tenses.find((t) => t.id === tense)
@@ -47,6 +51,7 @@ export default function ConjugationPractice() {
   const changeMode = (newTense, newNegative) => {
     setTense(newTense)
     setNegative(newNegative)
+    setQ((prev) => randomQuestion(prev))
     setAnswer('')
     setResult(null)
     setShowTable(false)
