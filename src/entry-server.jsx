@@ -17,7 +17,7 @@ export const pages = [
   { path: '/cat-city/dinle', ...catCityAudioMeta, noindex: true },
   ...posts.map((p) => ({
     path: `/blog/${p.slug}`,
-    title: `${p.title} (${p.titleEn}) | Turkish with Aylin`,
+    title: `${p.seoTitle || `${p.title} (${p.titleEn})`} | Turkish with Aylin`,
     description: p.summary,
   })),
 ]

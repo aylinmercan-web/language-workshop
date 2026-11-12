@@ -8,6 +8,7 @@ export const categories = [
 const posts = [
   {
     slug: 'turkceyi-kolay-ogrenmek-icin-7-ipucu',
+    seoTitle: '7 Tips to Learn Turkish More Easily',
     category: 'learning',
     date: '2026-11-12',
     level: 'B1',
@@ -125,6 +126,7 @@ const posts = [
   },
   {
     slug: 'gobeklitepe',
+    seoTitle: 'Göbeklitepe – B1 Turkish Reading',
     category: 'culture',
     date: '2026-11-03',
     level: 'B1',
@@ -212,6 +214,7 @@ const posts = [
   },
   {
     slug: 'sumela-manastirinin-hikayesi',
+    seoTitle: 'The Story of Sumela Monastery – B2 Turkish Reading',
     category: 'culture',
     date: '2026-11-03',
     level: 'B2',
@@ -329,6 +332,7 @@ const posts = [
   },
   {
     slug: 'ataturkun-hayati',
+    seoTitle: 'The Life of Atatürk – A2 Turkish Reading',
     category: 'readings',
     date: '2026-11-02',
     level: 'A2',
@@ -433,6 +437,7 @@ const posts = [
   },
   {
     slug: 'cay-saati',
+    seoTitle: 'Turkish Tea Time – A1 Turkish Reading',
     category: 'culture',
     date: '2026-10-26',
     level: 'A1',
@@ -484,6 +489,7 @@ const posts = [
   },
   {
     slug: 'nazar-boncugu',
+    seoTitle: 'The Evil Eye Bead – A2 Turkish Reading',
     category: 'culture',
     date: '2026-10-26',
     level: 'A2',
@@ -541,6 +547,7 @@ const posts = [
   },
   {
     slug: 'bayram-sabahi',
+    seoTitle: 'The Morning of Bayram – B1 Turkish Reading',
     category: 'culture',
     date: '2026-10-26',
     level: 'B1',
@@ -615,6 +622,7 @@ const posts = [
   },
   {
     slug: 'her-gun-duyacaginiz-turkce-ifadeler',
+    seoTitle: '6 Turkish Phrases You’ll Hear Every Day',
     category: 'words',
     date: '2026-10-26',
     level: 'A2',
@@ -682,6 +690,7 @@ const posts = [
   },
   {
     slug: 'her-gun-15-dakika-turkce-pratik',
+    seoTitle: 'How to Practise Turkish in 15 Minutes a Day',
     category: 'learning',
     date: '2026-10-26',
     level: 'B1',
