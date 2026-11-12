@@ -3,7 +3,7 @@ import TurkishFlag from './TurkishFlag'
 
 export default function Footer() {
   return (
-    <footer className="px-6 py-8 border-t border-line">
+    <footer className="px-6 pt-8 pb-28 md:pb-8 border-t border-line">
       <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm text-muted">
         <span className="inline-flex items-center gap-2">
           <TurkishFlag className="h-3 w-[18px] rounded-[2px]" />
