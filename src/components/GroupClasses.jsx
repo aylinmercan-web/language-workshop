@@ -19,7 +19,7 @@ const groups = [
     level: 'B1–B2',
     title: 'Conversation Club',
     text: 'Speaking and listening only: real-life topics, discussions and role plays to help you speak fluently and confidently.',
-    info: ['Live on Zoom', '4–8 students', 'Once a week, 90 minutes', '$60 / month (4 lessons, 6 hours)'],
+    info: ['Live on Zoom', '4–8 students', 'Once a week, 90 minutes', 'Join anytime, no end date', '$60 / month (4 lessons, 6 hours)'],
   },
 ]
 
