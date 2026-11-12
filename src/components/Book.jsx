@@ -75,9 +75,30 @@ function Features({ items }) {
   )
 }
 
-function CatCity() {
-  const [done, setDone] = useState(false)
+function AmazonLinks({ links }) {
+  if (!links.paperback && !links.kindle) return null
+  return (
+    <div className="flex flex-wrap gap-3">
+      {links.paperback && (
+        <a href={links.paperback} target="_blank" rel="noopener noreferrer" className="btn-primary px-6">
+          Paperback on Amazon
+        </a>
+      )}
+      {links.kindle && (
+        <a
+          href={links.kindle}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center rounded-lg border-2 border-primary px-6 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white"
+        >
+          Kindle e-book
+        </a>
+      )}
+    </div>
+  )
+}
 
+function CatCity() {
   return (
     <div className="flex flex-col md:flex-row gap-10 md:gap-14 items-center">
       <img
@@ -105,23 +126,7 @@ function CatCity() {
           Listen to the stories, read by the author →
         </a>
 
-        {site.bookUrl ? (
-          <div className="flex items-center gap-4">
-            <a href={site.bookUrl} target="_blank" rel="noreferrer" className="btn-primary px-6">
-              Buy the e-book
-            </a>
-            {site.bookPrice && <span className="text-lg font-bold text-ink">{site.bookPrice}</span>}
-          </div>
-        ) : done ? (
-          <p className="text-sm font-medium text-green-700 dark:text-green-400">Thanks! I'll email you when the book is out.</p>
-        ) : (
-          <EmailForm
-            subject="Cat City İstanbul – notify me"
-            label="Coming soon — get notified when it's out:"
-            button="Notify me"
-            onDone={() => setDone(true)}
-          />
-        )}
+        <AmazonLinks links={site.amazon.catCity} />
       </div>
     </div>
   )
@@ -152,13 +157,16 @@ function CaseBook() {
 
         <Features items={caseFeatures} />
 
-        {done ? (
-          <div>
-            <a href={samplePdf} download className="btn-primary px-6">
-              Download the free PDF
-            </a>
-            <p className="text-sm text-muted mt-3">Thanks! I'll also let you know when the full book is out.</p>
+        {(site.amazon.caseBook.paperback || site.amazon.caseBook.kindle) && (
+          <div className="mb-8">
+            <AmazonLinks links={site.amazon.caseBook} />
           </div>
+        )}
+
+        {done ? (
+          <a href={samplePdf} download className="btn-primary px-6">
+            Download the free PDF
+          </a>
         ) : (
           <EmailForm
             subject="Hangi Durum Eki? – free sample"
