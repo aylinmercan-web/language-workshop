@@ -15,8 +15,8 @@ export default function Footer() {
           </a>
         )}
         {site.italki && (
-          <a href={site.italki} target="_blank" rel="noreferrer" className="hover:text-brand underline">
-            italki
+          <a href={site.italki} target="_blank" rel="noreferrer" aria-label="italki" title="italki" className="inline-flex items-center hover:opacity-80">
+            <img src="/italki.png" alt="" width="24" height="24" className="h-6 w-6" />
           </a>
         )}
         {site.youtube && (
