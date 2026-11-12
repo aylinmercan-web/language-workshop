@@ -9,8 +9,8 @@ export const site = {
       kindle: 'https://www.amazon.com/dp/B0HQSW65WK',
     },
     caseBook: {
-      paperback: '',
-      kindle: '',
+      paperback: 'https://www.amazon.com/dp/6253194313',
+      kindle: 'https://www.amazon.com/dp/B0HRFRC35Y',
     },
   },
 }
