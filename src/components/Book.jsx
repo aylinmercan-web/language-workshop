@@ -170,7 +170,7 @@ function CaseBook() {
         ) : (
           <EmailForm
             subject="Hangi Durum Eki? – free sample"
-            label="Get the free sample (PDF, 17 pages):"
+            label="Get the free sample (PDF, 22 pages):"
             button="Get the PDF"
             onDone={() => setDone(true)}
           />
