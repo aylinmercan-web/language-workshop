@@ -27,7 +27,7 @@ const groups = [
 
 function whatsappLink(level, start) {
   const text = start
-    ? `Merhaba Aylin! I'd like to join the ${level} group class starting ${start}. Could you send me the details?`
+    ? `Merhaba Aylin! I'd like to join the new ${level} group starting ${start}. Could you send me the details?`
     : `Merhaba Aylin! I'm interested in the ${level} group class. Could you send me the details?`
   return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(text)}`
 }
@@ -52,8 +52,8 @@ export default function GroupClasses() {
               <div className="flex items-center gap-2 mb-3">
                 <span className="rounded-lg bg-accent px-3 py-1 text-sm font-extrabold text-teal-900">{g.level}</span>
                 {(g.start || g.tag) && (
-                  <span className="rounded-full bg-rose-500 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
-                    {g.start ? `Starts ${g.start}` : g.tag}
+                  <span className="whitespace-nowrap rounded-full bg-rose-500 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+                    {g.start ? `New group · ${g.start}` : g.tag}
                   </span>
                 )}
               </div>
