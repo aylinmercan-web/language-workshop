@@ -101,9 +101,15 @@ export const tenses = [
   },
   {
     id: 'past',
-    tr: 'Geçmiş zaman',
+    tr: 'Geçmiş zaman (-di)',
     en: 'Past tense',
     tip: '-di / -tı + ending: geldim, yaptın. After ç, f, h, k, p, s, ş, t the d becomes t.',
+  },
+  {
+    id: 'reported',
+    tr: 'Geçmiş zaman (-miş)',
+    en: 'Reported past (-miş)',
+    tip: '-miş / -mış / -muş / -müş + ending: gelmişim, yapmışsın. For things you heard from someone or noticed afterwards.',
   },
   {
     id: 'future',
@@ -177,6 +183,11 @@ export function conjugate(verb, tense, p, negative = false) {
     const b = negative ? stem + neg : stem
     const d = HARD.includes(b.at(-1)) ? 't' : 'd'
     return past(b + d + four(b), p)
+  }
+
+  if (tense === 'reported') {
+    const b = negative ? stem + neg : stem
+    return copula(b + 'm' + four(b) + 'ş', p)
   }
 
   if (tense === 'future') {
