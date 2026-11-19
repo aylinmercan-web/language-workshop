@@ -125,6 +125,96 @@ const posts = [
     ],
   },
   {
+    slug: 'nemrut-dagi',
+    seoTitle: 'Mount Nemrut – B1 Turkish Reading',
+    category: 'culture',
+    date: '2026-11-19',
+    level: 'B1',
+    minutes: 5,
+    title: 'Türkiye’de Gezilecek Yerler 3: Nemrut Dağı',
+    titleEn: 'Places to See in Turkey 3: Mount Nemrut',
+    summaryTr: 'Bir dağın tepesinde dev taş başlar, iki bin yıllık bir kral mezarı ve gün doğumunu izlemek için gece yola çıkan gezginler: Nemrut Dağı.',
+    summary: 'Giant stone heads on a mountain top, a 2,000-year-old royal tomb and travellers who set off at night to watch the sunrise. A B1 Turkish reading about Mount Nemrut, with key words.',
+    blocks: [
+      {
+        p: {
+          tr: 'Adıyaman’ın Kâhta ilçesinde, yaklaşık 2.150 metre yükseklikte bir dağ vardır: Nemrut Dağı. Her yıl binlerce gezgin buraya gelir, ama çoğu gündüz değil, gece yola çıkar. Çünkü Nemrut Dağı, dünyada gün doğumunu ve gün batımını izleyebileceğiniz en güzel yerlerden biridir.',
+          en: 'In the Kâhta district of Adıyaman, there is a mountain about 2,150 metres high: Mount Nemrut. Every year thousands of travellers come here, but most of them set off at night, not during the day. Because Mount Nemrut is one of the most beautiful places in the world to watch the sunrise and the sunset.',
+        },
+      },
+      { h: { tr: 'Kendini Tanrı Sanan Kral', en: 'The King Who Thought He Was a God' } },
+      {
+        p: {
+          tr: 'Yaklaşık iki bin yıl önce bu bölgede Kommagene adında küçük ama zengin bir krallık vardı. Kralı I. Antiokhos, hem Perslerin hem de Yunanların soyundan geldiğine inanıyordu ve kendini tanrılarla eşit görüyordu. Öldükten sonra tanrıların yanında, dağın en yüksek noktasında yatmak istedi.',
+          en: 'About two thousand years ago there was a small but rich kingdom in this region called Commagene. Its king, Antiochus I, believed that he came from both Persian and Greek ancestors, and he saw himself as equal to the gods. He wanted to lie next to the gods, at the highest point of the mountain, after he died.',
+        },
+      },
+      {
+        p: {
+          tr: 'Bu yüzden dağın zirvesine küçük taşlardan dev bir tepe yaptırdı. Bu yapay tepeye “tümülüs” denir. Tümülüs yaklaşık 50 metre yüksekliğinde ve 150 metre genişliğinde. Bilim insanları kralın mezarının bu taşların altında olduğunu düşünüyor, ama mezar bugüne kadar bulunamadı.',
+          en: 'So he had a giant mound made of small stones built on the summit of the mountain. This artificial hill is called a “tumulus”. The tumulus is about 50 metres high and 150 metres wide. Scientists think that the king’s tomb is under these stones, but the tomb has not been found to this day.',
+        },
+      },
+      { h: { tr: 'Yere Düşmüş Dev Başlar', en: 'Giant Heads on the Ground' } },
+      {
+        p: {
+          tr: 'Tümülüsün doğusunda ve batısında iki büyük teras var. Bu teraslarda 8-9 metre yüksekliğinde oturan dev heykeller duruyor: Zeus, Apollon, Herakles, Kommagene’nin bereket tanrıçası ve tabii ki Kral Antiokhos’un kendisi. Heykellerin yanında onları koruyan aslan ve kartal heykelleri de var.',
+          en: 'To the east and west of the tumulus there are two large terraces. On these terraces stand giant seated statues 8–9 metres high: Zeus, Apollo, Heracles, the goddess of fertility of Commagene and, of course, King Antiochus himself. Next to the statues there are also lion and eagle statues that guard them.',
+        },
+      },
+      {
+        p: {
+          tr: 'Yüzyıllar içinde depremler yüzünden heykellerin başları gövdelerinden koptu ve yere düştü. Bugün ziyaretçilerin fotoğrafını çektiği ünlü taş başlar işte bunlar. Her biri bir insan boyundan daha büyük. Nemrut Dağı 1881’de Alman mühendis Karl Sester tarafından yeniden keşfedildi ve 1987’de UNESCO Dünya Mirası Listesi’ne girdi.',
+          en: 'Over the centuries, because of earthquakes, the heads of the statues broke off their bodies and fell to the ground. These are the famous stone heads that visitors photograph today. Each one is bigger than a person. Mount Nemrut was rediscovered in 1881 by the German engineer Karl Sester, and in 1987 it was added to the UNESCO World Heritage List.',
+        },
+      },
+      { h: { tr: 'Bir Efsane: Kralın Yası', en: 'A Legend: The King’s Mourning' } },
+      {
+        p: {
+          tr: 'Nemrut adıyla ilgili halk arasında anlatılan bir efsane de var. Eskiden insanlar bin yıl yaşarmış. Bir kralın beş yüz yaşında tek bir oğlu varmış ve kral onu her şeyden çok severmiş. Bir gün oğlu Van Gölü’ne düşmüş ve boğulmuş. Kral o kadar üzülmüş ki hastalanmış. Ölmeden önce dağa dönüp acıyla bağırmış. Sesi dağın taşlarında yankılanmış. Kral ölünce dağ da bu acıya dayanamamış ve patlamış. O günden beri dağın sessizce yas tuttuğuna inanılır.',
+          en: 'There is also a folk legend about the name Nemrut. Long ago, people used to live for a thousand years. A king had an only son who was five hundred years old, and the king loved him more than anything. One day his son fell into Lake Van and drowned. The king was so sad that he fell ill. Before he died, he turned to the mountain and cried out in pain. His voice echoed on the stones of the mountain. When the king died, the mountain could not bear this pain either, and it erupted. Since that day, it is believed that the mountain has been silently mourning.',
+        },
+      },
+      {
+        p: {
+          tr: 'Dikkat ettiniz mi? Efsane “-miş” ile anlatılıyor: varmış, severmiş, düşmüş. Türkçede masallar ve efsaneler genellikle böyle anlatılır, çünkü bunları biz görmedik, başkalarından duyduk. Bir de küçük bir sır: Efsanedeki patlayan dağ aslında Van Gölü’nün kıyısındaki diğer Nemrut, yani Bitlis’teki Nemrut yanardağı. Adıyaman’daki Nemrut ise bir yanardağ değil. Türkiye’de iki Nemrut var!',
+          en: 'Did you notice? The legend is told with “-miş”: varmış, severmiş, düşmüş. In Turkish, fairy tales and legends are usually told this way, because we did not see these things ourselves, we heard them from others. And a little secret: the mountain that erupts in the legend is actually the other Nemrut on the shore of Lake Van, the Nemrut volcano in Bitlis. The Nemrut in Adıyaman is not a volcano. There are two Nemruts in Turkey!',
+        },
+      },
+      {
+        video: {
+          id: '7laHIyke31A',
+          title: 'Secrets of Mount Nemrut',
+          caption: 'Nemrut Dağı’nın Sırları · Secrets of Mount Nemrut. Video: Tatil Ana (YouTube)',
+        },
+      },
+    ],
+    glossary: [
+      ['ilçe', 'district'],
+      ['gezgin', 'traveller'],
+      ['yola çıkmak', 'to set off'],
+      ['gün doğumu / gün batımı', 'sunrise / sunset'],
+      ['krallık', 'kingdom'],
+      ['soyundan gelmek', 'to be descended from'],
+      ['zirve', 'summit, peak'],
+      ['yapay', 'artificial'],
+      ['mezar', 'tomb, grave'],
+      ['heykel', 'statue'],
+      ['bereket', 'fertility, abundance'],
+      ['gövde', 'body, trunk'],
+      ['kopmak', 'to break off'],
+      ['efsane', 'legend'],
+      ['boğulmak', 'to drown'],
+      ['yankılanmak', 'to echo'],
+      ['yas tutmak', 'to mourn'],
+      ['yanardağ', 'volcano'],
+    ],
+    note: {
+      tr: 'Nemrut Dağı’na en iyi mayıs ile ekim arasında gidilir, çünkü kışın yollar karla kapanır. Zirve yazın bile soğuk olabilir, özellikle gün doğumu için gidiyorsanız yanınıza mutlaka kalın bir mont alın.',
+      en: 'The best time to visit Mount Nemrut is between May and October, because in winter the roads are closed by snow. The summit can be cold even in summer, so if you are going for the sunrise, be sure to take a warm jacket with you.',
+    },
+  },
+  {
     slug: 'gobeklitepe',
     seoTitle: 'Göbeklitepe – B1 Turkish Reading',
     category: 'culture',
