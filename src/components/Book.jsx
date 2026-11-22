@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import catCityCover from '../assets/cat-city-cover.jpg'
 import caseCover from '../assets/hangi-durum-eki-cover.jpg'
+import catCityA2Cover from '../assets/cat-city-a2-cover.jpg'
 import { site } from '../config'
 import { sendForm } from '../api/axiosInstance'
 
@@ -132,6 +133,31 @@ function CatCity() {
   )
 }
 
+function CatCityA2() {
+  return (
+    <div className="flex items-center gap-6 md:gap-8 bg-card border border-line rounded-2xl p-5 md:p-6 shadow-sm max-w-2xl mx-auto">
+      <img
+        src={catCityA2Cover}
+        alt="Cat City İstanbul A2 book cover"
+        className="w-24 md:w-32 rounded-md shadow-lg flex-shrink-0"
+        loading="lazy"
+      />
+      <div lang="en">
+        <span className="inline-block rounded-full bg-rose-500 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white mb-2">
+          <span lang="tr">Yakında</span> · Coming soon
+        </span>
+        <h3 className="text-xl md:text-2xl font-extrabold text-ink">
+          Cat City <span lang="tr">İstanbul</span> · A2
+        </h3>
+        <p lang="tr" className="font-semibold text-brand mb-2">Simit'in Maceraları</p>
+        <p className="text-sm text-ink leading-relaxed">
+          Simit's adventures continue at A2 level, with new stories and audio read by the author.
+        </p>
+      </div>
+    </div>
+  )
+}
+
 function CaseBook() {
   const [done, setDone] = useState(false)
 
@@ -190,6 +216,7 @@ export default function Book() {
         </div>
         <div className="space-y-16">
           <CatCity />
+          <CatCityA2 />
           <CaseBook />
         </div>
       </div>
