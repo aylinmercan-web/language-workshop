@@ -7,6 +7,125 @@ export const categories = [
 
 const posts = [
   {
+    slug: 'yapay-zeka-dunyayi-degistirecek-mi',
+    seoTitle: 'Artificial Intelligence – B2 Turkish Reading',
+    category: 'readings',
+    date: '2026-11-22',
+    level: 'B2',
+    minutes: 6,
+    title: 'Yapay Zekâ Dünyayı Değiştirecek mi?',
+    titleEn: 'Will Artificial Intelligence Change the World?',
+    summaryTr: 'Ödevlerimizi yazıyor, resim çiziyor, bizimle sohbet ediyor. Peki yapay zekâ gerçekten bir devrim mi, yoksa biraz fazla mı yaygara koparıyoruz?',
+    summary: 'It writes our homework, draws pictures and chats with us. But is artificial intelligence really a revolution, or are we making too much fuss? A B2 Turkish reading with key words and discussion questions.',
+    blocks: [
+      {
+        p: {
+          tr: 'Kasım 2022’de ChatGPT adlı bir sohbet robotu herkesin kullanımına açıldığında, çok az kişi bunun bu kadar büyük bir tartışma başlatacağını tahmin ediyordu. Sadece iki ay içinde 100 milyon kişi onu denedi. O günden beri yapay zekâ neredeyse her gün gündemde: kimine göre insanlık tarihinin en büyük devrimi, kimine göre ise hakkında boşuna yaygara koparılan, abartılmış bir moda.',
+          en: 'When a chatbot called ChatGPT was opened to everyone in November 2022, very few people expected that it would start such a big debate. Within just two months, 100 million people tried it. Since then, artificial intelligence has been in the news almost every day: for some it is the biggest revolution in human history, for others an overhyped trend that people are making a needless fuss about.',
+        },
+      },
+      { h: { tr: 'Neler Yapabiliyor?', en: 'What Can It Do?' } },
+      {
+        p: {
+          tr: 'Üretken yapay zekâ denilen bu yeni sistemler, kendilerine verilen birkaç kelimeden yola çıkarak metin, resim, müzik ve hatta video üretebiliyor. Uzun bir raporu birkaç saniyede özetleyebiliyor, bir e-postayı başka bir dile çevirebiliyor, kod yazabiliyor. Görme engelliler için fotoğraftaki nesneleri tarif eden uygulamalar ya da doktorlara teşhiste yardımcı olan programlar da bu teknolojiden yararlanıyor.',
+          en: 'These new systems, called generative AI, can produce text, images, music and even video starting from just a few words given to them. They can summarise a long report in a few seconds, translate an email into another language and write code. Apps that describe objects in photos for visually impaired people and programs that help doctors with diagnosis also make use of this technology.',
+        },
+      },
+      {
+        p: {
+          tr: 'Hatta bazı araştırmacılar yapay zekâyı beynimizi “okumak” için kullanmayı deniyor. 2023’te Texas Üniversitesi’nden bilim insanları, “semantik dekoder” adını verdikleri bir sistem geliştirdi. Bu sistem, MR cihazındaki bir kişinin beyin etkinliğine bakarak onun dinlediği ya da hayal ettiği hikâyenin ana fikrini yazıya dökebiliyor. Kelimesi kelimesine olmasa da anlamı büyük ölçüde yakalıyor. Ancak bunun için kişinin saatlerce cihazda kalması ve gönüllü olarak iş birliği yapması gerekiyor.',
+          en: 'Some researchers are even trying to use AI to “read” our brains. In 2023, scientists at the University of Texas developed a system they called a “semantic decoder”. By looking at the brain activity of a person in an MRI scanner, this system can write down the main idea of a story the person is listening to or imagining. It does not get it word for word, but it largely captures the meaning. However, this requires the person to spend hours in the scanner and to cooperate voluntarily.',
+        },
+      },
+      {
+        video: {
+          id: 'k6ysbGas2Ew',
+          title: 'Yapay zekâ ile beyin okuma',
+          caption: 'Yapay zekâ ile beyin okuma · Reading the brain with AI. Video: YouTube',
+        },
+      },
+      {
+        p: {
+          tr: 'Ancak bu sistemlerin gerçekten “düşündüğünü” söylemek zor. Yapay zekâ, internetten topladığı çok büyük miktarda veriye bakarak bir cümlede hangi kelimenin geleceğini tahmin ediyor. Bu yüzden bazen kendinden çok emin bir şekilde yanlış bilgi verebiliyor. Bilim insanları buna “halüsinasyon” diyor. Ayrıca öğrendiği verilerdeki önyargıları da farkında olmadan tekrarlayabiliyor.',
+          en: 'However, it is hard to say that these systems really “think”. AI predicts which word will come next in a sentence by looking at the huge amount of data it has collected from the internet. That is why it can sometimes give wrong information with great confidence. Scientists call this “hallucination”. It can also repeat the biases in the data it learned from without being aware of it.',
+        },
+      },
+      { h: { tr: 'Kaygılar ve Korkular', en: 'Worries and Fears' } },
+      {
+        p: {
+          tr: 'En çok konuşulan kaygı, işlerimizi kaybetme korkusu. 2023’te bir Amerikan yatırım bankası olan Goldman Sachs, yapay zekânın dünya genelinde 300 milyon tam zamanlı işi etkileyebileceğini öne sürdü. Bu, o kadar işin ortadan kalkacağı anlamına gelmiyor; ama birçok mesleğin değişeceği kesin gibi görünüyor.',
+          en: 'The most talked-about worry is the fear of losing our jobs. In 2023, the American investment bank Goldman Sachs suggested that AI could affect 300 million full-time jobs around the world. This does not mean that so many jobs will disappear; but it seems certain that many professions will change.',
+        },
+      },
+      {
+        p: {
+          tr: 'Bir başka endişe de sahte içerik. Gerçeğinden ayırt etmesi zor fotoğraflar, videolar ve ses kayıtları çok kolay üretilebiliyor. Bu da yanlış bilginin hızla yayılmasına, insanların kandırılmasına ve dolandırıcılığa kapı açıyor. Okullarda da benzer bir sorun var: Öğretmenler, bir ödevi öğrencinin mi yoksa bir makinenin mi yazdığını anlamakta zorlanıyor.',
+          en: 'Another concern is fake content. Photos, videos and voice recordings that are hard to tell apart from real ones can be produced very easily. This opens the door to false information spreading quickly, to people being deceived and to fraud. Schools have a similar problem: teachers find it hard to tell whether an assignment was written by a student or by a machine.',
+        },
+      },
+      { h: { tr: 'Durdurmalı mı, Kurallar mı Koymalı?', en: 'Stop It or Set Rules?' } },
+      {
+        p: {
+          tr: 'Mart 2023’te, aralarında Elon Musk, Apple’ın kurucu ortağı Steve Wozniak ve yapay zekâ araştırmacısı Yoshua Bengio’nun da bulunduğu binlerce kişi açık bir mektup imzaladı. Mektupta, çok güçlü yapay zekâ sistemlerinin geliştirilmesine en az altı ay ara verilmesi istendi. Ancak büyük teknoloji şirketleri çalışmalarını durdurmadı. Bazı uzmanlar da mektubu eleştirerek asıl tehlikenin hayali “süper zekâlar” değil, bugün yaşanan somut sorunlar olduğunu söyledi.',
+          en: 'In March 2023, thousands of people, including Elon Musk, Apple co-founder Steve Wozniak and AI researcher Yoshua Bengio, signed an open letter. The letter asked for a pause of at least six months in the development of very powerful AI systems. However, the big tech companies did not stop their work. Some experts also criticised the letter, saying that the real danger was not imaginary “superintelligences” but the concrete problems happening today.',
+        },
+      },
+      {
+        p: {
+          tr: 'Hükümetler ise farklı yollar seçti. İtalya, veri güvenliği endişesiyle ChatGPT’yi 2023’te kısa bir süreliğine yasakladı. Avrupa Birliği ise 2024’te yapay zekâyı risk düzeyine göre düzenleyen ilk kapsamlı yasayı yürürlüğe koydu. Yani tartışma artık “yapay zekâ olsun mu, olmasın mı?” değil, “onu nasıl güvenli bir şekilde kullanırız?” sorusu etrafında dönüyor.',
+          en: 'Governments, on the other hand, chose different paths. Italy briefly banned ChatGPT in 2023 over data security concerns. The European Union, meanwhile, brought into force in 2024 the first comprehensive law that regulates AI according to its level of risk. So the debate is no longer about “should AI exist or not?” but revolves around the question “how can we use it safely?”',
+        },
+      },
+      { h: { tr: 'Dil Öğrenenler İçin', en: 'For Language Learners' } },
+      {
+        p: {
+          tr: 'Yapay zekâ dil öğrenenler için de hem bir fırsat hem de bir tuzak olabilir. Bir sohbet robotuyla gece yarısı Türkçe konuşmak, bir cümlenin neden yanlış olduğunu sormak ya da kendi seviyenize uygun bir hikâye istemek mümkün. Ama yapay zekâ bazen yanlış ya da doğal olmayan Türkçe cümleler kurabiliyor ve her yazdığınızı onun düzeltmesine izin verirseniz kendiniz öğrenmekten vazgeçebilirsiniz. En iyisi onu bir öğretmen yerine bir çalışma arkadaşı gibi kullanmak.',
+          en: 'AI can be both an opportunity and a trap for language learners. It is possible to speak Turkish with a chatbot in the middle of the night, ask why a sentence is wrong or request a story suited to your level. But AI sometimes produces incorrect or unnatural Turkish sentences, and if you let it correct everything you write, you may stop learning yourself. The best thing is to use it like a study partner rather than a teacher.',
+        },
+      },
+      {
+        p: {
+          tr: 'Belki de yapay zekâ ile ilgili en doğru cümle şu: Bu teknoloji dünyayı hem iyi hem de kötü yönde değiştirebilir. Hangi yönde değiştireceği ise büyük ölçüde onu nasıl kullandığımıza bağlı.',
+          en: 'Perhaps the most accurate sentence about AI is this: this technology can change the world both for better and for worse. Which way it changes it depends largely on how we use it.',
+        },
+      },
+      { h: { tr: 'Tartışalım', en: 'Let’s Discuss' } },
+      {
+        p: {
+          tr: '1. Sizce yapay zekâ insanların işini elinden alacak mı, yoksa yeni meslekler mi doğuracak? 2. Yapay zekâ ile yazılmış bir ödev kopya sayılmalı mı? 3. Siz Türkçe öğrenirken yapay zekâyı nasıl kullanıyorsunuz?',
+          en: '1. Do you think AI will take people’s jobs, or will it create new professions? 2. Should an assignment written with AI count as cheating? 3. How do you use AI while learning Turkish?',
+        },
+      },
+    ],
+    glossary: [
+      ['yapay zekâ', 'artificial intelligence'],
+      ['gündemde olmak', 'to be in the news, on the agenda'],
+      ['abartmak', 'to exaggerate'],
+      ['yaygara koparmak', 'to make a fuss'],
+      ['üretmek', 'to produce, to generate'],
+      ['özetlemek', 'to summarise'],
+      ['teşhis', 'diagnosis'],
+      ['etkinlik', 'activity'],
+      ['hayal etmek', 'to imagine'],
+      ['gönüllü', 'volunteer, voluntary'],
+      ['tahmin etmek', 'to predict, to guess'],
+      ['önyargı', 'bias, prejudice'],
+      ['kaygı / endişe', 'worry, concern'],
+      ['öne sürmek', 'to put forward, to suggest'],
+      ['ayırt etmek', 'to tell apart, to distinguish'],
+      ['dolandırıcılık', 'fraud'],
+      ['açık mektup', 'open letter'],
+      ['ara vermek', 'to pause, to take a break'],
+      ['somut', 'concrete'],
+      ['yürürlüğe koymak', 'to put into force'],
+      ['tuzak', 'trap'],
+    ],
+    note: {
+      tr: 'Bu yazıdaki “yaygara koparmak” deyimi, bir konu hakkında gereğinden fazla gürültü yapmak anlamına gelir: “Küçük bir çizik için bu kadar yaygara koparmaya gerek yok!”',
+      en: 'The idiom “yaygara koparmak” in this text means to make more noise about something than necessary: “There’s no need to make such a fuss about a small scratch!”',
+    },
+  },
+  {
     slug: 'turkceyi-kolay-ogrenmek-icin-7-ipucu',
     seoTitle: '7 Tips to Learn Turkish More Easily',
     category: 'learning',
